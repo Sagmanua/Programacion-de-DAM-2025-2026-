@@ -58,7 +58,7 @@ su edad es cosa que un variable que depende a un npc
  Cierre 
  Este ejercicio me oermitio aplicar lo aprendido en la declaracion de variables y en la funcion `print() `
  relacionandolo con mis pasatiempos favoretos.Al declarara el nombre de un videojuegi y el nomre de anime 
- + cambio variable de un vidoejuego y el numeor de episodios de anime vistos. De esta manera la practica no solo refuerza los cinceptos tecnocps 
+ cambio variable de un vidoejuego y el numeor de episodios de anime vistos. De esta manera la practica no solo refuerza los cinceptos tecnocps 
  sino que esta conectado con mi tiempo
 
 
