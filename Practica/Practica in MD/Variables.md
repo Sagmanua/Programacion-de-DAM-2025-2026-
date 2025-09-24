@@ -1,9 +1,9 @@
 
 ```
 '''
-    Programa clasificador de variables
+    Programa de Mis gusatas 
     (c) 2025 Bohdan Sydorenko
-    este programa clasifica a los pilotos de carreras 
+    este programa hacer para saber mis gustas 
 '''
 
 Enste ejerciocio nos hacemos un tarea sobre declaracion variables com diferte valor
