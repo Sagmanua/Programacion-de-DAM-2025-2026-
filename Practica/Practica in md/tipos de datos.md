@@ -50,5 +50,18 @@ print(nombre_jug,"tu edad es double es",str(edad_jug_double))
 ```
 
 
+1.-Indroduccion brece y contexalizacion
 
+En este ejercicio vamos a dessroolla un ejemplo de indeficar la usario. Aqui nos estudiamos como travaqjer con tipos de datos 
+
+2.-Desarrollo detallado y raeciso 
+    1. pregunta al usario que para saber que datos es y para trabajar 
+    2. Print un mensaje con su nombre salud con el 
+    3. pregunta su edad para saber que datos es y para trabajar 
+    4.calcula su doble edad 
+    5. Print su nombre + edad double 
+
+4.-concuslion 
+el ejerciocio permitio aplicar de manera praclica los conceptos basicos de la tipos de datos 
+como con ellos trabojo que hace si valores litral pero nesesito numrico para trabajar con ella em matematica
 
