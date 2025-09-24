@@ -75,7 +75,7 @@ print("Hola ", nombre_jug,"\n")
 
 edad_jug=input(nombre_jug+"cuando anos tienes\n")
 
-
+```
 
 4.-concuslion 
 el ejerciocio permitio aplicar de manera praclica los conceptos basicos de la tipos de datos 
