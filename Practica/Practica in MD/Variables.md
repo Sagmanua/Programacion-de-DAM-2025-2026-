@@ -54,10 +54,10 @@ su edad es cosa que un variable que depende a un npc
 
 
  Aplicacion practica con ejempol claro
- `
+ '''
  print("OR El nomre del juego fovorite es  ",nombre_juego)
  print("La epizode de ",nombre_seria," del personaje es ",episode)
- `
+ '''
  
  
  Cierre 
