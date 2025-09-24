@@ -9,7 +9,7 @@
 Enste ejerciocio nos hacemos un tarea sobre declaracion variables com diferte valor
     
     
-Que nos hacemos 
+Que yo hago
     1.crear variable nombre de personaje 
     2.print ella
     3.cambia
