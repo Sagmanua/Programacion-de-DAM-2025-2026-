@@ -61,6 +61,7 @@ En este ejercicio vamos a dessroolla un ejemplo de indeficar la usario. Aqui nos
     4.calcula su doble edad 
     5. Print su nombre + edad double 
 3.-Aplicacion practica
+
 ```
 #Variables
 nombre_jug = ""
