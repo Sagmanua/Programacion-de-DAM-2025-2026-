@@ -76,7 +76,8 @@ print("Hola ", nombre_jug,"\n")
 #pregunta la edad de usario 
 
 edad_jug=input(nombre_jug+"cuando anos tienes\n")
-
+#print nombre y eadad de usario 
+print(nombre_jug,"tu edad es double es",str(edad_jug_double))
 ```
 
 4.-concuslion 
