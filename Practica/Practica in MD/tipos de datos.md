@@ -2,9 +2,7 @@
 '''
     programa para  informacion a jugador 
     (c) Bohdan Sydorenko 
-   Este programa solicita al usuario su nombre y su edad.
-    Convierte la edad a un número entero, calcula el doble de la edad,
-    y genera mensajes personalizados de saludo y resultado
+    este programa pregunta a informacin a jugador 
 '''
 '''
     Que yo hago
@@ -62,6 +60,22 @@ En este ejercicio vamos a dessroolla un ejemplo de indeficar la usario. Aqui nos
     3. pregunta su edad para saber que datos es y para trabajar 
     4.calcula su doble edad 
     5. Print su nombre + edad double 
+3.-Aplicacion practica
+```
+#Variables
+nombre_jug = ""
+edad_jug = 0
+#pregunta la nombre 
+nombre_jug = input("hola que tu nombre")
+#print nombre de usario
+print("Hola ", nombre_jug,"\n")
+
+
+#pregunta la edad de usario 
+
+edad_jug=input(nombre_jug+"cuando anos tienes\n")
+
+
 
 4.-concuslion 
 el ejerciocio permitio aplicar de manera praclica los conceptos basicos de la tipos de datos 
