@@ -2,7 +2,9 @@
 '''
     programa para  informacion a jugador 
     (c) Bohdan Sydorenko 
-    este programa pregunta a informacin a jugador 
+   Este programa solicita al usuario su nombre y su edad.
+    Convierte la edad a un número entero, calcula el doble de la edad,
+    y genera mensajes personalizados de saludo y resultado
 '''
 '''
     Que yo hago
