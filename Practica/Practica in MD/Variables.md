@@ -1,22 +1,16 @@
 
+```
 Enste ejerciocio nos hacemos un tarea sobre declaracion variables com diferte valor
     
     
 Que nos hacemos 
-
     1.crear variable nombre de personaje 
-    
     2.print ella
-    
     3.cambia
-    
     4.print ella camboada
-    
     5.crear una nueva variable eada de personaje 
-    
     6.print nueva varible 
-
-``` 
+ 
     #variables 
     nombre_juego = "Borederlans 2"
     nombre_seria="One Piece "
