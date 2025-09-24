@@ -1,4 +1,4 @@
-´´´
+```
 '''
     tarea de literales 
     (c) Bohdan Sydorenko
@@ -15,4 +15,5 @@ nombre_videojuego = "WoT"
 edad_pelicula= 30
 
 print("El juego favorito es",nombre_videojuego,"y se recomienda a partir de",edad_pelicula)  
+
 ``` 
