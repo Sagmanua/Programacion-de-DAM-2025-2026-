@@ -1,21 +1,21 @@
 
-#variables 
-nombre_juego = "Borederlans 2"
-nombre_seria="One Piece "
-episode=1140
+    #variables 
+    nombre_juego = "Borederlans 2"
+    nombre_seria="One Piece "
+    episode=1140
 
-#Imprime el mensaje com nomre_per 
+    #Imprime el mensaje com nomre_per 
 
-print("El nomre del mi JUego favorite  es ",nombre_juego)
+    print("El nomre del mi JUego favorite  es ",nombre_juego)
 
-#cambio de valor 
-nombre_juego="WoT"
+    #cambio de valor 
+    nombre_juego="WoT"
 
-#Imprime el nueve vaolor de variable
-print("OR El nomre del juego fovorite es  ",nombre_juego)
+    #Imprime el nueve vaolor de variable
+    print("OR El nomre del juego fovorite es  ",nombre_juego)
 
-#Imprime el mensaje con edad personaje
-print("La epizode de ",nombre_seria," del personaje es ",episode)
+    #Imprime el mensaje con edad personaje
+    print("La epizode de ",nombre_seria," del personaje es ",episode)
     
 
 Enste ejerciocio nos hacemos un tarea sobre declaracion variables com diferte valor
