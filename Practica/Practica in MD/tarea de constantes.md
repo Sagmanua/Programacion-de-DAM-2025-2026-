@@ -34,6 +34,7 @@ print("Ahora visto ",episodes_vistos)
     Es esencial preservar ciertos datos sin cambios, como el título y la duración de las películas, en el proceso de desarrollo de aplicaciones de series y películas para prevenir que se presenten errores en los datos que se le muestran al usuario.  Para esto se emplean constantes, las cuales no pueden ser alteradas en el transcurso de la ejecución del programa.
 2.-Desarrollo técnico correcto y preciso 
 -1.crear  dos conctante
+```
     
 ```
  #constante 
@@ -58,6 +59,7 @@ episodes_vistos += 1
 -5.imprime atulizado valibre  
 ```
 print("Ahora visto ",episodes_vistos)
+```
 ```
 
 
