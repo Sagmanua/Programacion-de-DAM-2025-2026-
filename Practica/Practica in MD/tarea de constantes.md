@@ -38,7 +38,7 @@ Es esencial preservar ciertos datos sin cambios, como el título y la duración 
 ##2.-Desarrollo técnico correcto y preciso 
 ---
 
----
+
 1.crear  dos conctante
 
     
@@ -66,7 +66,7 @@ episodes_vistos += 1
 ```
 print("Ahora visto ",episodes_vistos)
 ```
----
+
 
 
 ----
