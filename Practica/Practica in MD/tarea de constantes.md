@@ -57,7 +57,6 @@ episodes_vistos += 1
 5.imprime atulizado valibre  
 ```
 print("Ahora visto ",episodes_vistos)
-
 ```
 
 
