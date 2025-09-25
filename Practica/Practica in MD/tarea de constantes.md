@@ -97,6 +97,7 @@ episodes_vistos += 1
 print("Ahora visto ",episodes_vistos)
 ```
 ##4.-Cierre/Conclusión enlazando con la unidad
+
 En este ejercioc yo uso el uso de constantes y variables, ya que permite distinguir entre información inmutable y dinámica dentro de un programa. 
 En el contexto de aplicaciones de series y películas, declarar constantes para títulos y duraciones  garantiza que los datos críticos no se modifiquen por error, 
 mientras que las variables permiten gestionar información cambiante, como el número de episodios vistos por un usuario.
