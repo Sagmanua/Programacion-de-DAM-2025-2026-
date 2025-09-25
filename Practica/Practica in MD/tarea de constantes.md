@@ -61,9 +61,43 @@ print("Ahora visto ",episodes_vistos)
 ```
 
 
-3.-
+3.-Aplicacion practica
+```
+'''
+    Tarea de Cotance
+    (c) Bohdan Sydorenko
+    Trabajo con constante y variable un tema de pelicula
+'''
+'''
+    que hago 
+    1.crear  dos conctante 
+    2.crear valores 
+    3.imprime constante con variables 
+    4. actulizar de valirablr
+    5.imprime atulizado valibre  
+'''
+#constante 
+PELICULA_TITLE = "One Piece "
+PELICULA_DURACION = 400
 
-4.-
+#variables 
+
+episodes_vistos = 40
+
+#impriri todos 
+print("Titulo",PELICULA_TITLE,
+      "\nDuracion en horas ",PELICULA_DURACION,
+      "\nEpisodes visto",episodes_vistos)
+#Actualizar la episodes
+episodes_vistos += 1
+
+#imprir actulisados episodes
+print("Ahora visto ",episodes_vistos)
+```
+4.-Cierre/Conclusión enlazando con la unidad
+En este ejercioc yo uso el uso de constantes y variables, ya que permite distinguir entre información inmutable y dinámica dentro de un programa. 
+En el contexto de aplicaciones de series y películas, declarar constantes para títulos y duraciones  garantiza que los datos críticos no se modifiquen por error, 
+mientras que las variables permiten gestionar información cambiante, como el número de episodios vistos por un usuario.
 
 
 
