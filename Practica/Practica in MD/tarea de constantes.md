@@ -29,7 +29,13 @@ episodes_vistos += 1
 #imprir actulisados episodes
 print("Ahora visto ",episodes_vistos)
 ```
+1.-Indroduccion brece y contexalizacion
 
+2.-
+
+3.-
+
+4.-
 
 
 
