@@ -2,6 +2,7 @@
 '''
     Tarea de Cotance
     (c) Bohdan Sydorenko
+    Trabajo con constante y variable un tema de pelicula
 '''
 '''
     que hago 
