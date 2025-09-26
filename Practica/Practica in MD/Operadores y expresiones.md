@@ -88,6 +88,5 @@ print("Base imponible",base_imponible,
 ```
 
 ##4.-Cierre/Conclusión enlazando con la unidad
-The development of the tax calculator has made it possible to put the core ideas of programming into practice. 
- such as variable declaration, data entry and exit, and the use of arithmetic operators.
+Como se ha evidenciado, la programación hace posible que cálculos diarios, como el IVA, sean hechos de manera rápida y exacta. Esta práctica consolida la utilización de operadores aritméticos, variables y entrada/salida de datos en Python, estableciendo así las bases para tareas más complejas en unidades subsiguientes. Asimismo, se contextualiza con sucesos reales, evidenciando la aplicabilidad práctica de la programación en el día a día.
 
