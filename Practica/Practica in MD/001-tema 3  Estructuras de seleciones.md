@@ -12,9 +12,9 @@
 '''
 Que hago
 1.creae Variable 
-3.Introduse datos 
-2.Utilaza conctructor  de control 
-3.Imprir la resulatado
+2.Introduse datos de usario
+3.Utilaza conctructor  de control 
+4.Imprir la resulatado
 '''
 
 #Vaarible 
@@ -53,12 +53,16 @@ else:
 
 ```
 
-2.Introduse datos 
+2.Introduse datos de usario
 ```
 
        
 ```
-3.Imprir la resulatado
+3.Utilaza conctructor  de control 
+```
+  
+```
+4.Imprir la resulatado
 ```
   
 ```
@@ -71,6 +75,7 @@ else:
 
 ##4.-Cierre/Conclusión enlazando con la unidad
 ---
+
 
 
 
