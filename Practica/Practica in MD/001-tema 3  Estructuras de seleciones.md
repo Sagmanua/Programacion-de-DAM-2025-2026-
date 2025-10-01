@@ -12,7 +12,7 @@
 '''
 Que hago
 1.creae Variable 
-2.Introduse datos 
+3.Introduse datos 
 2.Utilaza conctructor  de control 
 3.Imprir la resulatado
 '''
@@ -39,37 +39,26 @@ else:
 ```
 ##1.-Indroduccion brece y contexalizacion
 ---
-e.
+ Imagina que eres un desarrollador de videojuegos y necesitas clasificar a 
+    los jugadores según su edad para ofrecer contenido adecuado. Tienes 4 categorías principales: 
+    niño, adolescente, joven y no joven
 
 
 
 ##2.-Desarrollo técnico correcto y preciso
 ---
-1.crear clase  
-```
+1.creae Variable 
 
 ```
 
-2.creae def 
+```
+
+2.Introduse datos 
 ```
 
        
 ```
-3.Implemanta un constructor
-```
-
-```
-4.crear un metodo 
-```
- 
-
-```
-5.Instancia el objeto
-```
- 
-
-```
-6.llama al metodo
+3.Imprir la resulatado
 ```
   
 ```
@@ -82,6 +71,7 @@ e.
 
 ##4.-Cierre/Conclusión enlazando con la unidad
 ---
+
 
 
 
