@@ -87,11 +87,30 @@ edad = int(input("Escribe tu edad entre  la 5 y 60 \n"))
 ##-3.-Aplicacion practica
 ---
 ```
+#Vaarible 
+edad = 0
 
+#Introduse tu edad 
+edad = int(input("Escribe tu edad entre  la 5 y 60 \n"))
+
+#Comprobar edad de usario 
+# Y Imprir  su edad depende de edad 
+
+if edad <=10 and edad>=5:
+    print("Eres un Nino")
+elif edad >= 10 and edad <=19:
+    print("Eres un adolescente")
+elif edad>= 20 and edad <29:
+    print("Eres un Joven")
+elif edad >=30 and edad <= 60:
+    print("No ya Eres no Joven")
+else:
+    print("Esribe la edad correcta por favor ")
 ```
 
 ##4.-Cierre/Conclusión enlazando con la unidad
 ---
+
 
 
 
