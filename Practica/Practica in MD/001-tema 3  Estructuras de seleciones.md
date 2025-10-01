@@ -1,3 +1,4 @@
+```
 '''
     Clasifacacion de edades en ub VideoJuego
     (c) Bohdan Sydorenko
@@ -35,9 +36,10 @@ elif edad >=30 and edad <= 60:
     print("No ya Eres no Joven")
 else:
     print("Esribe la edad correcta por favor ")
-
+```
     
         
+
 
 
 
