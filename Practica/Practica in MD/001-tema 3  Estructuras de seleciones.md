@@ -50,23 +50,40 @@ else:
 1.creae Variable 
 
 ```
+edad = 0
 
 ```
 
 2.Introduse datos de usario
 ```
+edad = int(input("Escribe tu edad entre  la 5 y 60 \n"))
 
        
 ```
 3.Utilaza conctructor  de control 
 ```
-  
+    if edad <=10 and edad>=5:
+
+    elif edad >= 10 and edad <=19:
+
+    elif edad>= 20 and edad <29:
+
+    elif edad >=30 and edad <= 60:
+
+    else:
 ```
 4.Imprir la resulatado
 ```
-  
+    print("Eres un Nino")
+    print("Eres un adolescente")
+    print("Eres un Joven")
+    print("No ya Eres no Joven")
 ```
+5.si es no edad correcta 
+```
+print("Esribe la edad correcta por favor ")
 
+```
 ##-3.-Aplicacion practica
 ---
 ```
@@ -75,6 +92,7 @@ else:
 
 ##4.-Cierre/Conclusión enlazando con la unidad
 ---
+
 
 
 
