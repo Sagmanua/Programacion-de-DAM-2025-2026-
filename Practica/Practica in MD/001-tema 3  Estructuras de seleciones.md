@@ -37,8 +37,53 @@ elif edad >=30 and edad <= 60:
 else:
     print("Esribe la edad correcta por favor ")
 ```
-    
-        
+##1.-Indroduccion brece y contexalizacion
+---
+e.
+
+
+
+##2.-Desarrollo técnico correcto y preciso
+---
+1.crear clase  
+```
+
+```
+
+2.creae def 
+```
+
+       
+```
+3.Implemanta un constructor
+```
+
+```
+4.crear un metodo 
+```
+ 
+
+```
+5.Instancia el objeto
+```
+ 
+
+```
+6.llama al metodo
+```
+  
+```
+
+##-3.-Aplicacion practica
+---
+```
+
+```
+
+##4.-Cierre/Conclusión enlazando con la unidad
+---
+
+
 
 
 
