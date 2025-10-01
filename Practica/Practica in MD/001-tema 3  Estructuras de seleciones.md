@@ -81,7 +81,7 @@ edad = int(input("Escribe tu edad entre  la 5 y 60 \n"))
 ```
 5.si es no edad correcta 
 ```
-print("Esribe la edad correcta por favor ")
+    print("Esribe la edad correcta por favor ")
 
 ```
 ##-3.-Aplicacion practica
@@ -92,6 +92,7 @@ print("Esribe la edad correcta por favor ")
 
 ##4.-Cierre/Conclusión enlazando con la unidad
 ---
+
 
 
 
