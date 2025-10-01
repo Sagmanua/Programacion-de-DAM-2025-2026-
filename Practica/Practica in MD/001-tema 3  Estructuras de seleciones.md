@@ -47,20 +47,20 @@ else:
 
 ##2.-Desarrollo técnico correcto y preciso
 ---
-1.creae Variable 
+1.creae Variable en que usario va escribe su edad 
 
 ```
 edad = 0
 
 ```
 
-2.Introduse datos de usario
+2.Introduse edad de usario 
 ```
 edad = int(input("Escribe tu edad entre  la 5 y 60 \n"))
 
        
 ```
-3.Utilaza conctructor  de control 
+3.Utilaza conctructor  de control para saber la edad de usario 
 ```
     if edad <=10 and edad>=5:
 
@@ -72,7 +72,7 @@ edad = int(input("Escribe tu edad entre  la 5 y 60 \n"))
 
     else:
 ```
-4.Imprir la resulatado
+4.Imprir la resulatado depende de edad 
 ```
     print("Eres un Nino")
     print("Eres un adolescente")
@@ -92,6 +92,7 @@ print("Esribe la edad correcta por favor ")
 
 ##4.-Cierre/Conclusión enlazando con la unidad
 ---
+
 
 
 
