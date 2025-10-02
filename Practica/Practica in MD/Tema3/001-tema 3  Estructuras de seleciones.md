@@ -112,6 +112,8 @@ else:
 ---
 
 
+Con este ejercicio pudimos aplicar estructuras de control condicional (if, elif, else) para resolver un problema sencillo de clasificación por rangos de edad. 
+Esta práctica nos permitió reforzar la importancia de establecer condiciones lógicas claras y comprender cómo el flujo de un programa cambia según los valores que recibe
 
 
 
