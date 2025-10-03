@@ -2,6 +2,7 @@
 '''
     Estructuro de Salto
     (c) Bohdan SYdorenko
+    Hacemos una calculador facil 
     
 
 
