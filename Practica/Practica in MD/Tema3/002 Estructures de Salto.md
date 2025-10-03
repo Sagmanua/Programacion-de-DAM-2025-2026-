@@ -2,8 +2,7 @@
 '''
     Estructuro de Salto
     (c) Bohdan SYdorenko
-    Reccorer loa años de produ producción, 
-    los meses y los días para contar los patitos de goma producidos diariamente.
+    
 
 
 '''
@@ -23,7 +22,7 @@ print(calculaSuma(4,3))
 ```
 ##1.-Indroduccion brece y contexalizacion
 ---
-
+Estos pasatiempos no solo me brindan entretenimiento, sino que también me ayudan a relajarme y mantener un equilibrio entre estudio y ocio. Inspirado en mi gusto por los videojuegos, en esta ocasión desarrollaré una función en Python que calcule la suma de dos números. Aunque la tarea es sencilla, este tipo de operaciones básicas son muy utilizadas en la programación de videojuegos y en el desarrollo de sistemas que requieren cálculos rápidos y eficientes.
 
 
 
@@ -49,3 +48,5 @@ print(calculaSuma(4,3))
 
 ##4.-Cierre/Conclusión enlazando con la unidad
 ---
+
+La creación de una función en Python para calcular la suma de dos números me permitió reforzar conocimientos básicos de programación, como el uso de parámetros, retornos de valores y la importancia de separar la lógica del resultado mostrado.
