@@ -1,6 +1,6 @@
 ```
 '''
-    004 Aserciones
+    001-Caracteristicas de los objetos
     (c) Bohdan SYdorenko
     En este ejercicio, voy  a trabajar con objetos predefinidos en Python utilizando el módulo math.
     Este módulo proporciona una serie de funciones matemáticas útiles que podemos utilizar sin necesidad de crear nuestras propias clases. 
