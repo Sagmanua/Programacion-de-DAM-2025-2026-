@@ -51,26 +51,26 @@ episodios_vistos = None
 
 2.variavles
 ```
-
+tiempo_videojuegos = 10
+episodios_vistos = 4 
        
 ```
 3.calcula las goeas de video juegos
 ```
+horas_videojuegos_anules = tiempo_videojuegos * 365
 
 ```
 4.calculas las horas de episodios 
 ```
- 
+ episodios_anules = episodios_vistos * 52
+
 
 ```
 5.imprimir todo
 ```
- 
+print("Horas de videojuegos al año:", horas_videojuegos_anules)
+print("Episodios de anime al año:", episodios_anules)
 
-```
-6.llama al metodo
-```
-  
 ```
 
 ##-3.-Aplicacion practica
@@ -81,6 +81,7 @@ episodios_vistos = None
 
 ##4.-Cierre/Conclusión enlazando con la unidad
 ---
+
 
 
 
