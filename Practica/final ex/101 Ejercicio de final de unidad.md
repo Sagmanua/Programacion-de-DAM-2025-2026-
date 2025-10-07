@@ -1,3 +1,4 @@
+```
 '''
     Ejercicio de final de unidad
     (c) Bohdan Sydorenko
@@ -31,4 +32,51 @@ episodios_anules = episodios_vistos * 52
 #imprimir todo
 print("Horas de videojuegos al año:", horas_videojuegos_anules)
 print("Episodios de anime al año:", episodios_anules)
+```
+##1.-Indroduccion brece y contexalizacion
+---
+
+
+
+
+##2.-Desarrollo técnico correcto y preciso
+---
+1.crear clase  
+```
+
+```
+
+2.creae def 
+```
+
+       
+```
+3.Implemanta un constructor
+```
+
+```
+4.crear un metodo 
+```
+ 
+
+```
+5.Instancia el objeto
+```
+ 
+
+```
+6.llama al metodo
+```
+  
+```
+
+##-3.-Aplicacion practica
+---
+```
+
+```
+
+##4.-Cierre/Conclusión enlazando con la unidad
+---
+
 
