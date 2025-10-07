@@ -76,11 +76,28 @@ print("Episodios de anime al año:", episodios_anules)
 ##-3.-Aplicacion practica
 ---
 ```
+#declaracion variables
+tiempo_videojuegos = None
+episodios_vistos = None 
 
+#variavles 
+tiempo_videojuegos = 10
+episodios_vistos = 4 
+
+#calcula las goeas de video juegos
+horas_videojuegos_anules = tiempo_videojuegos * 365
+
+#calculas las horas de episodios 
+episodios_anules = episodios_vistos * 52
+
+#imprimir todo
+print("Horas de videojuegos al año:", horas_videojuegos_anules)
+print("Episodios de anime al año:", episodios_anules)
 ```
 
 ##4.-Cierre/Conclusión enlazando con la unidad
 ---
+
 
 
 
