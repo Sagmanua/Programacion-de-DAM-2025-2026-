@@ -41,26 +41,29 @@ print("Episodios de anime al año:", episodios_anules)
 
 ##2.-Desarrollo técnico correcto y preciso
 ---
-1.crear clase  
+1.declaracion variables
+
 ```
+tiempo_videojuegos = None
+episodios_vistos = None 
 
 ```
 
-2.creae def 
+2.variavles
 ```
 
        
 ```
-3.Implemanta un constructor
+3.calcula las goeas de video juegos
 ```
 
 ```
-4.crear un metodo 
+4.calculas las horas de episodios 
 ```
  
 
 ```
-5.Instancia el objeto
+5.imprimir todo
 ```
  
 
@@ -78,5 +81,6 @@ print("Episodios de anime al año:", episodios_anules)
 
 ##4.-Cierre/Conclusión enlazando con la unidad
 ---
+
 
 
