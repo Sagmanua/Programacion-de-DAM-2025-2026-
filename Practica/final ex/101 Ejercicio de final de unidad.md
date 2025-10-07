@@ -35,7 +35,9 @@ print("Episodios de anime al año:", episodios_anules)
 ```
 ##1.-Indroduccion brece y contexalizacion
 ---
-
+En mi tiempo libre, disfruto dedicando varias horas a jugar videojuegos y a ver series anime. Estas actividades no solo me brindan entretenimiento, 
+sino que también me permiten desconectarme del estudio y relajarme. 
+Para entender mejor cuánto tiempo invierto en estas aficiones a lo largo del año, es útil cuantificar tanto las horas que paso jugando videojuegos como la cantidad de episodios de anime que veo.
 
 
 
@@ -97,6 +99,9 @@ print("Episodios de anime al año:", episodios_anules)
 
 ##4.-Cierre/Conclusión enlazando con la unidad
 ---
+En conclusión, al calcular las horas anuales dedicadas a los videojuegos y la cantidad de episodios de anime vistos, 
+podemos aplicar de manera práctica los conceptos de variables y operaciones aritméticas aprendidos en esta unidad. 
+Esto demuestra cómo la programación nos permite modelar situaciones de la vida cotidiana y cuantificar nuestros hábitos de forma clara y precisa.
 
 
 
