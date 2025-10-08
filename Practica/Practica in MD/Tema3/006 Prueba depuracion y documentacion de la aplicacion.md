@@ -47,7 +47,8 @@ print(raizSegura("asdf")) #literal
 ```
 ##1.-Indroduccion brece y contexalizacion
 ---
-
+El objetivo de este ejercicio es que el alumno implemente una función llamada raizSegura(numero) que permita calcular la raíz cuadrada de un número de manera segura, manejando entradas incorrectas o inesperadas sin que el programa falle. 
+La función debe incluir validación de datos, manejo de errores con try/except y comprobaciones internas mediante aserciones (assert) para garantizar que los valores de entrada y salida sean correctos.
 
 
 
@@ -131,3 +132,7 @@ print(raizSegura("asdf")) #literal
 
 ##4.-Cierre/Conclusión enlazando con la unidad
 ---
+
+En este ejercicio, el alumno aprendió a implementar la función raizSegura(numero), incorporando validación de datos, 
+manejo de errores con try/except y aserciones para garantizar que la función se comporte correctamente frente a cualquier tipo de entrada. Este tipo de prácticas es fundamental en programación, 
+ya que evitan que los programas fallen inesperadamente, protegen los datos y permiten un control seguro de la información.
