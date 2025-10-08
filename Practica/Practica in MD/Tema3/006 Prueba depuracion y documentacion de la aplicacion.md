@@ -3,7 +3,6 @@
     006 Prueba deouracion y documentacion de la aplicion
     (c) Bohdan Sydorenko
     En mi tiempo libre, disfruto mucho jugando videojuegos y viendo películas y series anime. Estos hobbies me ayudan a relajarme y pasar tiempo con amigos.
-
     Hoy te propongo un ejercicio que combina tus pasatiempos favoritos con el concepto de aserciones en programación.
 
 
