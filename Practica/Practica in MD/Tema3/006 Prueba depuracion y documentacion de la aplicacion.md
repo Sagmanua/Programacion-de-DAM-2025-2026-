@@ -1,21 +1,20 @@
 ```
 '''
-    Ejercicio de final de unidad
+    006 Prueba deouracion y documentacion de la aplicion
     (c) Bohdan Sydorenko
-    En mi tiempo libre, disfruto mucho jugando videojuegos y viendo series anime. 
-    Esta actividad son una gran parte de mi diversión y me mantienen entretenido cuando no estoy ocupado con mis estudios.
+    
 
 
 '''
 '''
 Que hago
-    1.variables
-    2.declarar varibles
-    3.calcula las goeas de video juegos
-    4.calculas las horas de episodios 
-    5.imprimir todo
+    1.import math para calcular de raiz 
+    2.define una funcion con parametro numero en el
+    3.probar si es valoe numerico va a segundo paso  si es no es numerico probar convertir a numerico si no va return 0 
+    4.comprueba si es no negativo para no da erro si es negativo return 0
+    5.ahora calcula raiz y return el
+    6.probar todo valor que puede para probar que todo funciona
 '''
-
 #import 
 import math
 #variable
@@ -23,25 +22,28 @@ import math
 
 
 
-
+#define funcion
 def raizSegura(numero):
-
+    #probar si es numerico
     try:
+        #transfer a numerico
         numero = float(numero)
-        
+        #si es no negativo 
         if numero >= 0:
+            #calcula la raiz de numero
             raiz = math.sqrt(numero)
-            #print(raiz)
+           
             return raiz
+        #si es negativo return 0
         else:
             return 0
         
-        
+    #si es no numerico return 0 
     except:
         return 0
-
-print(raizSegura(10))
-print(raizSegura("10"))
-print(raizSegura(-5))
-print(raizSegura("asdf"))
+#probar todos variantes 
+print(raizSegura(10)) #numerico
+print(raizSegura("10")) #numero literal 
+print(raizSegura(-5)) #numerico negativo
+print(raizSegura("asdf")) #literal 
 ```
