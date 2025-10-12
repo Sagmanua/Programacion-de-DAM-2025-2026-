@@ -6,31 +6,31 @@
 
 ##2.-Desarrollo técnico correcto y preciso
 ---
-1.crear clase  
+1.
 ```
 
 ```
 
-2.creae def 
+2.
 ```
 
        
 ```
-3.Implemanta un constructor
+3.
 ```
 
 ```
-4.crear un metodo 
+4.
 ```
  
 
 ```
-5.Instancia el objeto
+5.
 ```
  
 
 ```
-6.llama al metodo
+6.
 ```
   
 ```
