@@ -22,7 +22,9 @@ import random
 
 #variables
 
-numero = random.randrange(1,100) #usamos el random para general ranodm number para calcular 
+numero = 0
+#usamos el random para general ranodm number para calcular 
+numero = random.randrange(1,100) 
 
 raiz = math.sqrt(numero)# calcula la raiz de numero 
 
