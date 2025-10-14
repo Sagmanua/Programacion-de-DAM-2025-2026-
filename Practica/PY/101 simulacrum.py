@@ -24,8 +24,11 @@ descuento_pct = 0
 #inputes 
 
 clientes_nombre=input("Intoduce tu Nombre")
-edad=int(input("Introduce tu edad"))
-
+edad=input("Introduce tu edad")
+try:
+    edad = int(edad)
+except:
+    print("edad es no numerico")
 
 if edad>= 18:
     print("edad es valido")
