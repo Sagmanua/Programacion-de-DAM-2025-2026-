@@ -25,13 +25,11 @@ descuento_pct = 0
 
 clientes_nombre=input("Intoduce tu Nombre")
 edad=input("Introduce tu edad")
+
 try:
     edad = int(edad)
-except:
-    print("edad es no numerico")
-
-if edad>= 18:
-    print("edad es valido")
+    if edad>= 18:
+        print("edad es valido")
     base_imponible=float(input("base"))
     
     try:
@@ -66,6 +64,9 @@ if edad>= 18:
     "\nIVA (21%):",importe_iva,""
     "\nTOTAL A PAGAR:",total_factura)
 
+
+except:
+    print("edad es no numerico")
 
 else:
     print("es menor de 18 ")
