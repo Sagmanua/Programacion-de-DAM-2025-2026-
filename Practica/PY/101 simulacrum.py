@@ -1,10 +1,15 @@
 '''
-
+    101 SIMULACRUM
     (c) Bohdan Sydorenko
 '''
 '''
     que hago 
-
+    1.VARIABLES
+    2INPUTES
+    3.SI EDAD ES MAS QUE 18
+    4.SI base_imponible es no negativo
+    5.calcular descuento
+    6.calcula total_factura
 '''
 
 
