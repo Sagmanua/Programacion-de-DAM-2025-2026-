@@ -59,7 +59,9 @@ class Pelicula:
         self.director = director
         self.anyo_estreno = anyo_estreno
 ```
+
 2.dar valores a propieda Pelicula para guardar informacion 
+
 ```
 pelicula = Pelicula("El Señor de los Anillos: La comunidad del anillo","Peter Jackson",2001)
 
@@ -72,10 +74,11 @@ Class Videojuego:
         self.desarrollador = desarrollador
         self.anyo_lanzamiento = anyo_lanzamiento
 ```
-4.dar valores a propieda VideoJuego
-````
-juego = Videojuego("Minecraft","Mojang Studios",2009)
 
+4.dar valores a propieda VideoJuego
+
+```
+juego = Videojuego("Minecraft","Mojang Studios",2009)
 ``` 
 5.Imprimir propiedades con su volores
 ```
@@ -85,6 +88,7 @@ print(pelicula.nombre, "\n",pelicula.director,"\n",pelicula.anyo_estreno)
 
 ##-3.-Aplicacion practica
 ---
+
 ```
 #crear class Pelicula
 class Pelicula:
@@ -110,6 +114,7 @@ juego = Videojuego("Minecraft","Mojang Studios",2009)
 print(juego.nombre, "\n",juego.desarrollador,"\n",juego.anyo_lanzamiento)
 print(pelicula.nombre, "\n",pelicula.director,"\n",pelicula.anyo_estreno)
 ```
+
 
 ##4.-Cierre/Conclusión enlazando con la unidad
 ---
