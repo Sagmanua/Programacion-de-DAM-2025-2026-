@@ -26,14 +26,15 @@ descuento_pct = 0
 clientes_nombre=input("Intoduce tu Nombre")
 edad=input("Introduce tu edad")
 
+#probar si es numerico
 try:
     edad = int(edad)
     if edad>= 18:
         print("edad es valido")
     base_imponible=float(input("base"))
     
-    try:
-        base_imponible >= 0
+    if base_imponible >= 0:
+        
         if base_imponible<100 and base_imponible>0:
             descuento_pct  = 0
             print("Menos de 100 € → 0%")
@@ -43,7 +44,7 @@ try:
         elif base_imponible>=200:
             descuento_pct  = 10
             print("200 € o más → 10%")
-    except:
+    else:
         print("base imponible es negativo")   
     # cálculo del descuento
     importe_descuento = base_imponible*(descuento_pct/100)
