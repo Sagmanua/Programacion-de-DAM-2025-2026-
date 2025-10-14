@@ -21,12 +21,17 @@ tiempo_peliculas =70
 
 tiempo_videojuegos = 30
 
-#
+#Cálculo de la duración promedio:
+
+
 
 def calcular_duracion_promedio(tiempo_videojuegos, tiempo_peliculas):
     promedio = (tiempo_videojuegos+tiempo_peliculas)/2
     return promedio
 
+#dar valor 
 resultado = calcular_duracion_promedio(tiempo_videojuegos,tiempo_peliculas)
+
+#Mostrar el resultado:
 
 print(resultado)
