@@ -10,16 +10,22 @@ Que hago
 
 '''
 
+#import 
 import datetime
 
+#variables
 Weekday=""
 
+#usa datetime para cojer data de hoy
 fecha_actual = datetime.datetime.now()
 
+#imprimir año mes y dia de hoy
 print("Hoy es el",fecha_actual.year,fecha_actual.month,fecha_actual.day )
 
+#saber el numero de dia de semana 
 day = fecha_actual.weekday()
 
+#probar en que numero es dia 
 if day == 0 :
     Weekday = "lunes"
 elif day == 1 :
@@ -36,5 +42,6 @@ elif day == 6 :
     Weekday = "domingo"
     print("domingo")
 
+#imprimir dia de la semana 
 print("Día de la semana:",Weekday )
 
