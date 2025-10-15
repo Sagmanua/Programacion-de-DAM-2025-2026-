@@ -42,8 +42,9 @@ if precio_bruto <50:
 total = subtotal_iva-DESCUENTO
 
 #imprimi todo
-print(nombre_cliente,"nombre")
-print(precio_bruto,"safasdf")
-print("iva_aplicado",iva_aplicado)
-print("DESCUENTO",DESCUENTO)
-print("total",total)
+print("------------RESUME--------------")
+print("Tu Nombre es",nombre_cliente)
+print("tu presio bruto es",precio_bruto)
+print("Tu iva aplicado es ",iva_aplicado)
+print("Tu descuento es ",DESCUENTO)
+print("Total que pagar ",total)
