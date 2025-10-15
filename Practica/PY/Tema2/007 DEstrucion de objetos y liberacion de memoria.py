@@ -15,9 +15,17 @@
 caballos = 0
 cuadra = 0
 
-caballos = int(input())
+#inputes
+caballos = int(input("Itroduce numeros de caballos"))
 
-cuadra = int(input())
+cuadra = int(input("Introduce numeros de cuadras"))
 
+#calculos 
 cuadra_nes = caballos/cuadra
+
+
+print("---Resultado-----")
+print("Tu tienes",caballos,"caballos")
+print("en cada cuardo puede esta",cuadra,"caballos")
+print("Tu nesito ",cuadra_nes,"cuadras")
 
