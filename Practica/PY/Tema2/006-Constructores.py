@@ -1,9 +1,7 @@
 '''
     006-COnstructores
     (c) Bohdan SYdorenko
-    En nuestra actualidad digital, los videojuegos y las películas son dos de los hobbies más populares entre los jóvenes. Imagina un mundo donde estas actividades forman parte integral del día a día. 
-    En este ejercicio, vamos a explorar cómo podemos utilizar objetos predeterminados en el lenguaje de programación para manejar estos hobbies.
-'''
+    En mi tiempo libre, disfruto mucho jugando videojuegos y viendo series anime. Crear objetos utilizando constructores me parece muy interesante porque permite dar forma a mis personajes favoritos como si fueran parte real del juego. En este ejercicio, vamos a utilizar la clase date de Python para crear un objeto que represente la fecha actua'''
 '''
 Que hago
 
