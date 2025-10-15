@@ -20,8 +20,8 @@ caballos = int(input("Itroduce numeros de caballos"))
 
 cuadra = int(input("Introduce numeros de cuadras"))
 
-#calculos 
 cuadra_nes = caballos/cuadra
+
 
 
 print("---Resultado-----")
