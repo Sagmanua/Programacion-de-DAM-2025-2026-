@@ -44,7 +44,7 @@ total = subtotal_iva-DESCUENTO
 #imprimi todo
 print("------------RESUME--------------")
 print("Tu Nombre es",nombre_cliente)
-print("tu presio bruto es",precio_bruto)
+print("Tu presio bruto es",precio_bruto)
 print("Tu iva aplicado es ",iva_aplicado)
 print("Tu descuento es ",DESCUENTO)
 print("Total que pagar ",total)

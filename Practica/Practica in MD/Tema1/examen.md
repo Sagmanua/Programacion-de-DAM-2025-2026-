@@ -57,8 +57,9 @@ print("Total que pagar ",total)
 
 ##1.-Indroduccion brece y contexalizacion
 ---
-En este ejercicio calcular el total a pagar por un cliente, considerando el IVA y un descuento aplicado bajo una condición específica.
-A través de este ejercicio se refuerzan conceptos fundamentales de programación, como el uso de variables, constantes, operadores aritméticos y estructuras condicionales. 
+Se calculará al cliente el monto total que debe pagar, con consideración del IVA y un descuento que viene incluido bajo un condición específica en este ejercicio.
+
+Este ejercicio ayuda a fortalecer principios básicos de programación, como la utilización de constantes, operadores aritméticos, variables y estructuras condicionales.
 
 
 
@@ -150,6 +151,6 @@ print("Total que pagar ",total)
 
 ##4.-Cierre/Conclusión enlazando con la unidad
 ---
-Con este ejercicio se refuerzan los conceptos de la unidad sobre variables, constantes, operadores y estructuras condicionales, aplicándolos a un caso práctico de facturación.
-Permite comprender cómo automatizar cálculos como IVA, descuentos y total a pagar, integrando la teoría con una situación real de programación.
+Este ejercicio facilita consolidar los conceptos de la unidad respecto a estructuras condicionales, variables, constantes y operadores, al aplicárselos a un ejemplo práctico de factura.
+Facilita comprender cómo se puede automatizar cálculos como el IVA, los descuentos y el monto a pagar al combinar teoría con un caso específico de programación.
 
