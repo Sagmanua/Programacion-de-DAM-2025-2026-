@@ -1,0 +1,1 @@
+=СУММЕСЛИ(Sheet1!A4:A100, A2, Sheet1!M4:M100)+СУММЕСЛИ(Sheet2!A2:A100, A2, Sheet2!M2:M100)+СУММЕСЛИ(Sheet3!A2:A100, A2, Sheet3!M2:M100)+СУММЕСЛИ(Sheet4!A1:A100, A2, Sheet4!M1:M100)
