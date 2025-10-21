@@ -6,8 +6,11 @@
 
 '''
 '''
-
-
+Que hago:
+1.variables
+2.inputes
+3.calculos 
+4.imprimir todo
 '''
 
 #variables
@@ -16,16 +19,16 @@ caballos = 0
 cuadra = 0
 
 #inputes
-caballos = int(input("Itroduce numeros de caballos"))
+caballos = int(input("Introduce numero de caballos"))
+cuadra = int(input("introduce numero caballos por cuadra "))
 
-cuadra = int(input("Introduce numeros de cuadras"))
-
-cuadra_nes = caballos/cuadra
-
-
+#calculos
+cuadra_nes = caballos // cuadra
+if caballos % cuadra != 0:
+    cuadra_nes += 1
 
 print("---Resultado-----")
 print("Tu tienes",caballos,"caballos")
 print("en cada cuardo puede esta",cuadra,"caballos")
-print("Tu nesito ",cuadra_nes,"cuadras")
+print("Tu nesito",cuadra_nes,"cuadras para guardar este numero de ",caballos)
 

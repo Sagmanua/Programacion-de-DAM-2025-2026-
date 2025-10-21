@@ -4,7 +4,13 @@
     En mi tiempo libre, disfruto mucho jugando videojuegos y viendo series anime. Crear objetos utilizando constructores me parece muy interesante porque permite dar forma a mis personajes favoritos como si fueran parte real del juego. En este ejercicio, vamos a utilizar la clase date de Python para crear un objeto que represente la fecha actua'''
 '''
 Que hago
-
+1.import 
+2.variables
+3.Usa datetime
+4.imprimir fecha 
+5.saber dia numeor del dia 
+6.number of dia in palabra 
+7.imprimir dia de semana
 
 '''
 
