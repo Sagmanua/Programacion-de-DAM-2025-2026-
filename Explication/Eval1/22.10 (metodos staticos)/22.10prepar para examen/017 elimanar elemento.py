@@ -1,3 +1,5 @@
+import pickle
+
 class Cliente():
     def __init__(self,nombre,apellidos,email):
         self.nombre = nombre
@@ -7,9 +9,20 @@ class Cliente():
 print("----------------")
 print("-----------------")
 
+try:  #### Ojo que igual no existe el archivo ######
+  archivo = open("clientes.bin",'rb')
+  clientes = pickle.load(archivo)
+  archivo.close
+except:
+  print("No existe archivo de datos")
+
 clientes = []
 
 while True:
+    archivo = open("clientes.bin","wb")
+    pickle.dump(clientes,archivo) 
+    archivo.close
+
     print("escogr una opcion")
     print("1. Inserta un cliene")
     print("2.listar clientes")
@@ -52,4 +65,5 @@ while True:
         elif confirmacon == "n" or confirmacon =="N":
             print("Canselado")
         else:
-            print("Opcion no valida")        
+            print("Opcion no valida")
+                
