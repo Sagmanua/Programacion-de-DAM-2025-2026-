@@ -9,7 +9,8 @@
 '''
 Que hago:
 1.crear una clase
-2.
+2.obejetos de clientes
+3.Imprimir todo
 '''
 # Definición de la clase Cliente
 class Clientes:
