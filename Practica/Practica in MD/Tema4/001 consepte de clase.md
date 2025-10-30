@@ -45,7 +45,7 @@ print("Dirección:", cliente2.direccion)
 
 ## 1.-Indroduccion brece y contexalizacion
 
-Para este ejercicio, vamos a crear una clase Cliente que tenga propiedades para almacenar la información de un cliente. Esto nos ayudará a entender cómo encapsular datos dentro de una clase y cómo acceder a ellos mediante método
+Para este ejercicio, vamos a trabar con concptos clases y objetos de la Programación Orientada a Objetos (POO) y  crear una clase Cliente que tenga propiedades para almacenar la información de un cliente. Esto nos ayudará a entender cómo encapsular datos dentro de una clase y cómo acceder a ellos mediante método
 
 
 
