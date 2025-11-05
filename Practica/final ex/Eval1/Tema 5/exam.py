@@ -47,7 +47,6 @@ while True:
         id = 0
         for cliente in clientes:
             print("id de cliente:",id,cliente.nombre,cliente.apellidos,cliente.email)
-            print()
             id += 1
     elif opcion == 3:
         break
