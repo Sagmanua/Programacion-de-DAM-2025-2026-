@@ -1,8 +1,5 @@
 # Indroduccion brece y contexalizacion
-
-
-
-
+En nuestra sociedad actual, las series anime y las películas son una fuente de entretenimiento muy popular. Muchos jóvenes disfrutan de coleccionables y productos relacionados con sus franquicias favoritas. En este ejercicio, combinaremos este interés con la programación orientada a objetos, creando una aplicación simple para gestionar productos personalizados.
 
 # Desarrollo técnico correcto y preciso
 ### Crear class `Productos` para gurdar informacion en este clase
@@ -42,6 +39,7 @@ else:
 ```
 
 # Codigo completa
+## Python
 ```
 class Productos():
     def __init__(self, nombre, precio, categoria):
@@ -69,3 +67,4 @@ while True:
         break
 ```
 # Cierre/Conclusión enlazando con la unidad
+Con este ejercicio hemos aprendido a crear una clase con propiedades y a instanciar objetos en Python. También hemos visto cómo leer y modificar listas dentro de un objeto y cómo usar estructuras condicionales if para interactuar con el usuario. Esto sirve como base para desarrollar aplicaciones más complejas de gestión de productos, similares a tiendas en línea o colecciones de artículos de anime, mostrando cómo la programación orientada a objetos se aplica en la vida real.
