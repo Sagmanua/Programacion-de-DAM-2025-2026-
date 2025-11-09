@@ -1,7 +1,7 @@
 import json
 with open("block.json", "r") as archivo:
-    contactos = archivo.readlines()
-for articulo in contactos:
+    contenido = json.load(archivo)
+for articulo in contenido:
     print("####### ARTICULO ########")
     print(f"Título: {articulo['titulo']}")
     print(f"Fecha: {articulo['fecha']}")
