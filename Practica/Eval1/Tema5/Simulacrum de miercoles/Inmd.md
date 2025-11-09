@@ -1,10 +1,6 @@
 
 # 1.-Indroduccion brece y contexalizacion
-
-
-
-
-
+En esta unidad se ha explorado el manejo de bases de datos y la importancia de las operaciones CRUD (Crear, Leer, Actualizar y Eliminar) en aplicaciones de software. La práctica desarrollada consiste en una aplicación de consola en Python que permite interactuar directamente con una base de datos MySQL. Esta experiencia brinda una comprensión práctica de cómo se gestionan los datos, se ejecutan consultas y se mantienen la integridad y consistencia de la información en un sistema.
 # 2.-Desarrollo técnico correcto y preciso
 ## Python CRUD 
 ### Al primero importar `mysql.connector` para puede conectar con Mysql y conecta en bases de datos de mi ordenador y escribir si todo bien or no 
@@ -332,3 +328,4 @@ except Exception as e:
 ``` 
 
 # 4.-Cierre/Conclusión enlazando con la unidad
+La implementación de esta aplicación CRUD ha permitido consolidar los conceptos aprendidos en la unidad sobre bases de datos y programación. Se evidenció cómo las operaciones básicas de manipulación de datos se integran en un flujo lógico de la aplicación, reforzando la importancia de la interacción entre Python y MySQL para gestionar información de manera eficiente y segura. Esta práctica contribuye a preparar al estudiante para el desarrollo de soluciones más complejas, aplicando los principios de la unidad en un contexto real y funcional.
