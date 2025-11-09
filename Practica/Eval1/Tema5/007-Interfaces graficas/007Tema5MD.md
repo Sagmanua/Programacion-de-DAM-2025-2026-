@@ -88,3 +88,4 @@ ventana.mainloop()
 ```
 
 # Cierre/Conclusión enlazando con la unidad
+Al igual que en los videojuegos y las interfaces de anime interactivas, una interfaz gráfica atractiva y funcional mejora la experiencia del usuario, haciendo que la interacción con el programa sea más intuitiva y divertida. Este ejercicio enseña cómo convertir la lógica de un programa en algo visual, habilidad útil para proyectos futuros como aplicaciones, juegos o simuladores.
