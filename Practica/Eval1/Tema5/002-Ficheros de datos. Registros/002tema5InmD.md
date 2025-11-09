@@ -5,14 +5,30 @@
 
 
 # Desarrollo técnico correcto y preciso
-
+## Al primero creeo una json file con nombre `bñock.json` y gurdo informcionen ella 
+```
+[
+  {
+    "titulo": "Primer artículo",
+    "fecha": "2025-10-16",
+    "autor": "Jose Vicente Carratalá",
+    "contenido": "Este es el contenido del primer artículo"
+  },
+  {
+    "titulo": "Segundo artículo",
+    "fecha": "2025-10-17",
+    "autor": "Jose Vicente Carratalá",
+    "contenido": "Este es el contenido del segundo artículo"
+  }
+]
+```
 
 # Codigo completa
-
+## Python
 ```
 import json
 with open("block.json", "r") as archivo:
-    contactos = archivo.readlines()
+    contenido = json.load(archivo)
 for articulo in contenido:
     print("####### ARTICULO ########")
     print(f"Título: {articulo['titulo']}")
@@ -21,6 +37,23 @@ for articulo in contenido:
     print(f"Contenido: {articulo['contenido']}")
     print("#########################")
     print("")
+```
+## JSON
+```
+[
+  {
+    "titulo": "Primer artículo",
+    "fecha": "2025-10-16",
+    "autor": "Jose Vicente Carratalá",
+    "contenido": "Este es el contenido del primer artículo"
+  },
+  {
+    "titulo": "Segundo artículo",
+    "fecha": "2025-10-17",
+    "autor": "Jose Vicente Carratalá",
+    "contenido": "Este es el contenido del segundo artículo"
+  }
+]
 ```
 
 # Cierre/Conclusión enlazando con la unidad
