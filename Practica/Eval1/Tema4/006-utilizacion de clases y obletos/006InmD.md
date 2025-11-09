@@ -1,5 +1,6 @@
 # Indroduccion brece y contexalizacion
-
+En el mundo digital moderno, los videojuegos y las series anime forman parte del entretenimiento diario de millones de personas. Plataformas como Crunchyroll o Netflix permiten seguir cientos de historias diferentes, y los videojuegos narrativos incluso comparten estructuras similares, con capítulos o misiones que se desbloquean progresivamente.
+En este ejercicio aprenderemos a modelar una serie anime con una clase en Python, aplicando los conceptos de clases, objetos y métodos, para gestionar de forma sencilla qué episodios hemos visto y cuántos nos quedan por disfrutar.
 
 
 
@@ -58,3 +59,6 @@ print("Episodios restantes:", serie.episodios_restantes())
 ```
 
 # Cierre/Conclusión enlazando con la unidad
+Este ejercicio muestra cómo las clases y objetos nos permiten representar elementos del mundo real, como una serie anime, dentro de un programa.
+De forma similar, en los videojuegos se utilizan clases para crear personajes, niveles o misiones con sus propias propiedades.
+Comprender este concepto es fundamental para desarrollar aplicaciones y juegos más organizados y realistas.
