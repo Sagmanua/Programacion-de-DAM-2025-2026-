@@ -2,7 +2,8 @@ nombre = input("Introduce el nombre: ")
 email = input("Introduce el email: ")
 
 with open("agenda.txt", "a") as archivo:
-        archivo.write(nombre, email,"\n")
+    archivo.write(nombre + ", " + email + "\n")
+
 
 print("Contacto guardado con éxito.")
 
