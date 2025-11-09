@@ -1,10 +1,20 @@
 import tkinter as tk
-
-
+import mysql.connector
+conexion = mysql.connector.connect(host="localhost",user="empresadam",password="Empresadam123$",database="empresadam")
+cursor = conexion.cursor()
 ventana = tk.Tk()
 def insertar():
-    pass
-
+  cursor.execute('''
+    INSERT INTO clientes
+    VALUES(
+      NULL,
+      "'''+dninie.get()+'''",
+      "'''+nombre.get()+'''",
+      "'''+apellidos.get()+'''",
+      "'''+email.get()+'''"
+    );
+  ''')
+  conexion.commit()
 marco = tk.Frame(ventana)
 tk.Label(marco,text="Introduce el dni/nie del cliente").pack(padx=10,pady=10)
 dninie = tk.Entry(marco)
