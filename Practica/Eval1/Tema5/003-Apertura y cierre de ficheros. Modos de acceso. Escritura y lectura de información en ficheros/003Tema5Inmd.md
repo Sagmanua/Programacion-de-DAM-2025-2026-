@@ -1,8 +1,5 @@
 # Indroduccion brece y contexalizacion
-
-
-
-
+En este ejercicio, he decidido combinar dos de mis hobbies favoritos: videojuegos y series/anime. Para ello, crearé un archivo donde almacenaré mi nombre de usuario y mis videojuegos favoritos, tal como si fuera un pequeño registro personal de mis intereses. Esto me permitirá practicar cómo leer y escribir información en archivos usando los modos que hemos estudiado en clase.
 
 # Desarrollo técnico correcto y preciso
 ## Python 
@@ -52,3 +49,4 @@ with open(nombre_archivo, "r") as archivo:
 ```
 
 # Cierre/Conclusión enlazando con la unidad
+Este ejercicio me permitió aplicar de manera práctica los modos de apertura de archivos que hemos estudiado: "w" para crear y sobrescribir, "a" para añadir información, y "r" para leer contenido. Además, me ayudó a organizar y registrar de manera sencilla mis hobbies, demostrando cómo la programación puede integrarse con intereses personales de forma práctica.
