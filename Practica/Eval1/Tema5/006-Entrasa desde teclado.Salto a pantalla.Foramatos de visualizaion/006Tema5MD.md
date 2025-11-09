@@ -70,7 +70,7 @@ elif opcion == "2":
 ```
 else:
     break
-````
+```
 # Codigo completa
 
 ```
@@ -122,3 +122,4 @@ while True:
 ```
 
 # Cierre/Conclusión enlazando con la unidad
+En este ejercicio hemos aplicado los conceptos de clases y objetos para gestionar clientes y su videojuego favorito. Al añadir un nuevo atributo y crear funciones para agregar, mostrar y buscar clientes, vimos cómo los objetos pueden almacenar y organizar información de manera clara. Esto refuerza la utilidad de la programación orientada a objetos para modelar situaciones reales y mantener el código modular y fácil de mejorar.
