@@ -1,8 +1,5 @@
 # Indroduccion brece y contexalizacion
-
-
-
-
+En este contexto, estamos trabajando con los sistemas de ficheros, una parte crucial de cualquier sistema informático. A través de ejercicios prácticos, aprenderás a listar el contenido de una carpeta, recorrer directorios y manejar archivos en Python. Además, como aficionado a las series anime, te proponemos un ejercicio divertido que involucra buscar elementos específicos dentro de un archivo.
 
 # Desarrollo técnico correcto y preciso
 ## Python Parte 1 
@@ -91,3 +88,4 @@ for linea in lineas:
 ```
 
 # Cierre/Conclusión enlazando con la unidad
+En esta práctica hemos aplicado los conceptos fundamentales de los sistemas de ficheros: listar carpetas, recorrer directorios y buscar información en archivos. Estas acciones reflejan cómo organizar y acceder a datos de forma estructurada. Al relacionarlo con series anime y videojuegos, podemos ver aplicaciones reales, como gestionar episodios o buscar personajes favoritos en archivos. Así, consolidamos la teoría de la unidad de sistemas de ficheros de manera práctica y útil.
