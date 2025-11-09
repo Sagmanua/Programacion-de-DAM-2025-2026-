@@ -13,6 +13,59 @@ import tkinter as tk
 import mysql.connector
 ```
 ### Conecta a bases datos en ni caso `empresadam` con user `empresadam` y contrasena `Empresadam123$`
+```
+conexion = mysql.connector.connect(
+    host="localhost",
+    user="empresadam",
+    password="Empresadam123$",
+    database="empresadam"
+    )
+    cursor = conexion.cursor()
+```
+### Crear ventana Principal con Tk
+```
+ventana = tk.Tk()
+```
+### def `insertar` para insertar values en bases de datos 
+```
+def insertar():
+  cursor.execute('''
+    INSERT INTO clientes
+    VALUES(
+      NULL,
+      "'''+dninie.get()+'''",
+      "'''+nombre.get()+'''",
+      "'''+apellidos.get()+'''",
+      "'''+email.get()+'''"
+    );
+  ''')
+```
+### Conect marco a ventana 
+```
+marco = tk.Frame(ventana)
+```
+### Crear label (campos para insertar textp)
+```
+tk.Label(marco,text="Introduce el dni/nie del cliente").pack(padx=10,pady=10)
+dninie = tk.Entry(marco)
+dninie.pack(padx=10,pady=10)
+tk.Label(marco,text="Introduce el nombre del cliente").pack(padx=10,pady=10)
+nombre = tk.Entry(marco)
+nombre.pack(padx=10,pady=10)
+tk.Label(marco,text="Introduce los apellidos del cliente").pack(padx=10,pady=10)
+apellidos = tk.Entry(marco)
+apellidos.pack(padx=10,pady=10)
+tk.Label(marco,text="Introduce el email del cliente").pack(padx=10,pady=10)
+email = tk.Entry(marco)
+email.pack(padx=10,pady=10)
+```
+
+### Button para ajecutar inserta en la bases de datos 
+```
+tk.Button(marco,text="Insertar cliente",command = insertar).pack(padx=10,pady=10)
+marco.pack(padx=20,pady=20)
+ventana.mainloop()
+```
 # Codigo completa
 
 ```
