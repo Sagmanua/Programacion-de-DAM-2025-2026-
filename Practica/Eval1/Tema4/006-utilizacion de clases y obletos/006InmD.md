@@ -23,7 +23,7 @@ def ver_episodio(self, episodio):
 def episodios_restantes(self):
 return self.episodios - self.visto
 ```
-###  Creamos la instancia de la clase Series
+###  Creo la instancia de la clase Series
 ```
 serie = Serias("Attack on Titan", 64)
 ```
