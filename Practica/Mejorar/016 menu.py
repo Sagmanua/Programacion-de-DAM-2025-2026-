@@ -3,18 +3,19 @@ import os
 agenda = []
 
 def menu():
-    print("Seleciona una opcion")
+    print("«Selecciona» una opcion")
     print("1.-Insertar una registro")
-    print("2.Leer registro")
+    print("2.-Leer registro")
     print("3.-Guardar registros")
+    print("4.-Aclulizar registros")
+    print("5.-borar regustro")
     print("Otro valu salir")
-    opcion = input("Elige opcion")
 
 def insertar():
     nombre = input("Dime tu nombre")
     apellidos = input("Dime tu apellidos")
     email = input("Dime tu email")
-    telefono = input("Dime tu munero")
+    telefono = input("Dime tu nunero")
     if telefono.isdigit():
         if "@" in email:
             agenda.append([nombre,apellidos,email,telefono])
@@ -33,7 +34,7 @@ def guarda():
     with open("agenda.bin","wb")as archivo:
         pickle.dump(agenda,archivo)
         archivo.close()
-        print("Es gurdado en bases de datos👌")
+        print("Es guardado en bases de datos👌")
 
 name_file = "agenda.bin"
 
@@ -49,6 +50,7 @@ else:
 
 while True:
     menu()
+    opcion = input("Elige opcion")
     try:
         opcion = int(opcion)
         
@@ -59,7 +61,7 @@ while True:
         elif opcion == 2:
             leer()
         elif opcion == 3:
-            leer()
+            guarda()
         else:
             break
     except:
