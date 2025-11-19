@@ -16,7 +16,8 @@ while True:
         agenda.append([nombre,apellidos,email,numeros])
     #Añado a la agenda
     elif opcion == 2:
-        print(agenda)
+        for registro in agenda:
+            print(agenda[registro])
     elif opcion == 3:
         archivo = open("agenda.bin","wb")
         pickle.dump(agenda,archivo)
