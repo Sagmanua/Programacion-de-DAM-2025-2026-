@@ -1,17 +1,19 @@
-
-agenda  = [["Juan", 
-     "Perez",
-     "info@joracra.com",
-     "555-1234"
-],
-[
-    "Ana",
-    "Gomez",
-    "email@.com",
-    "555-5678"
-]
-]
-print(agenda[0])
-print(agenda[0][0])
-agenda[0][0] = "Bohdan"
-print(agenda[0][0])
+palet = [#x
+            [#y
+                [1,2,3],
+                [4,5,6],
+                [7,8,9]
+            ],
+            [#y
+                [11,12,13],
+                [14,15,16],
+                [17,18,19]
+            ],
+            [#y
+                [21,22,23],
+                [24,25,26],
+                [27,28,29]
+            ],
+                  
+        ]
+print(palet)
