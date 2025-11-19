@@ -1,0 +1,17 @@
+
+agenda  = [["Juan", 
+     "Perez",
+     "info@joracra.com",
+     "555-1234"
+],
+[
+    "Ana",
+    "Gomez",
+    "email@.com",
+    "555-5678"
+]
+]
+print(agenda[0])
+print(agenda[0][0])
+agenda[0][0] = "Bohdan"
+print(agenda[0][0])
