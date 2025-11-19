@@ -10,7 +10,7 @@ def menu():
     print("4.-Aclulizar registros")
     print("5.-borar regustro")
     print("Otro valu salir")
-
+############# WRITE 
 def insertar():
     nombre = input("Dime tu nombre")
     apellidos = input("Dime tu apellidos")
@@ -23,31 +23,35 @@ def insertar():
             print("eamil no tiene @")
     else:
         print("telefono es no corecta")
-
-    
-
+############ READ
 def leer():
     for i,contacto  in enumerate(agenda):
         print(i ,contacto)
-
+############ SAVE
 def guarda():
     with open("agenda.bin","wb")as archivo:
         pickle.dump(agenda,archivo)
         archivo.close()
         print("Es guardado en bases de datos👌")
+############# UPDATE
+def actulizar():
+    print("")
+########### DELETE
+def borar():
+    print("")
 
-name_file = "agenda.bin"
+def check_fiel():
+    name_file = "agenda.bin"
+    # Check if the file exists and is a file
+    if os.path.isfile(name_file):
+            # Если файл существует, загружаем данные
+        with open(name_file, "rb") as archivo:
+            agenda = pickle.load(archivo)
+        print("Datos cargados desde el archivo👌")
+    else:
+        print("File does not exist or is not a file")
 
-# Check if the file exists and is a file
-if os.path.isfile(name_file):
-        # Если файл существует, загружаем данные
-    with open(name_file, "rb") as archivo:
-        agenda = pickle.load(archivo)
-    print("Datos cargados desde el archivo👌")
-else:
-    print("File does not exist or is not a file")
-
-
+check_fiel()
 while True:
     menu()
     opcion = input("Elige opcion")
@@ -62,6 +66,10 @@ while True:
             leer()
         elif opcion == 3:
             guarda()
+        elif opcion == 4:
+            actulizar()
+        elif opcion == 5:
+            borar()
         else:
             break
     except:
