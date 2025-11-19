@@ -35,12 +35,13 @@ def guarda():
         print("Es guardado en bases de datos👌")
 ############# UPDATE
 def actulizar():
-    print("")
+    agenda.append
 ########### DELETE
 def borar():
     print("")
 
 def check_fiel():
+    global agenda
     name_file = "agenda.bin"
     # Check if the file exists and is a file
     if os.path.isfile(name_file):
