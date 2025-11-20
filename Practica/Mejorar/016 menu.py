@@ -61,9 +61,10 @@ def borar():
         idx_borar = int(idx_borar)
         if 0 <= idx_borar < len(agenda):
             print("Your shure you want delete",idx_borar)
-            opcion_segura=input("Write yes or si")
+            opcion_segura=input("Write yes or si,if you shure")
+            opcion_segura = opcion_segura.lower()
             if opcion_segura == "yes" or opcion_segura =="si":
-                agenda.pop[idx_borar]
+                agenda.pop(idx_borar)
     except ValueError:
         print("number is not numeric")
 def check_fiel():
