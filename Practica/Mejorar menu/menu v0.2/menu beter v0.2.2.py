@@ -47,7 +47,7 @@ def actulizar():
     except:
         print("ES no numero") 
 
-    if 0 <= idx < 5:
+    if 0 <= idx < len(agenda):
         nombre = input("INtroduce nombre").strip()
         apellidos = input("introduce apeelidos").strip()
         email = input("introduce eail").strip()
@@ -65,17 +65,15 @@ def actulizar():
 
 #-------------------------- DELETE---------------------
 def borar():
-    idx = input("Write what numero to delete")
+    idx = input("Write what numero to change")
     try:
         idx = int(idx)
-        if 0 <= idx < len(agenda):
-            print("Your shure you want delete",idx)
-            opcion_segura=input("Write yes or si,if you shure")
-            opcion_segura = opcion_segura.lower()
-            if opcion_segura == "yes" or opcion_segura =="si":
-                agenda.pop(idx)
-    except ValueError:
-        print("number is not numeric")
+    except:
+        print("ES no numero") 
+    if 0 <= idx < len(agenda):
+        check_sure(idx)
+    else:
+        print("Number is not right")
 ##### Check if a have file 
 def check_fiel():
     global agenda
@@ -107,7 +105,8 @@ def check_email(email):
 
 
 #################### Check for sure
-def check_sure ():
+def check_sure (idx):
+    print("Your sure you want delete",idx)
     opcion_segura=input("Write yes or si,if you shure")
     opcion_segura = opcion_segura.lower()
     if opcion_segura == "yes" or opcion_segura =="si":
