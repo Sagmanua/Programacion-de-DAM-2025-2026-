@@ -48,13 +48,14 @@ def actulizar():
             apellidos = input("introduce apeelidos")
             email = input("introduce eail")
             telefono = input("introduce telefovo")
-            if telefono.isdigit():
-                if "@" in email:
-                    agenda[idx] = [nombre, apellidos, email, telefono]
-                else:
-                    print("eamil no tiene @")
-            else:
-                print("telefono es no corecta")
+            if not check_telefono(telefono):
+                print("Telefono no es correcto")
+                return
+            if not check_email(email):
+                print("Email no tiene @")
+                return
+            agenda[idx] = [nombre, apellidos, email, telefono]
+            print("Registro ",idx," actualizado correctamente.")
         else:
             print("Number is not right")
     except ValueError:
