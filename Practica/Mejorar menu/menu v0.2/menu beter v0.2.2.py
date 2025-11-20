@@ -14,18 +14,19 @@ def menu():
     print("Otro valu salir")
 ############# WRITE 
 def insertar():
-    nombre = input("Dime tu nombre")
-    apellidos = input("Dime tu apellidos")
-    email = input("Dime tu email")
-    telefono = input("Dime tu nunero")
-    if telefono.isdigit():
-        if "@" in email:
-            agenda.append([nombre,apellidos,email,telefono])
-        else:
-            print("eamil no tiene @")
-    else:
-        print("telefono es no corecta")
-############ READ
+    nombre = input("Dime tu nombre").strip()
+    apellidos = input("Dime tu apellidos").strip()
+    email = input("Dime tu email").strip()
+    telefono = input("Dime tu nunero").strip()
+    if not check_telefono(telefono):
+            print("Telefono no es correcto")
+            return
+    if not check_email(email):
+            print("Email no tiene @")
+            return
+
+    agenda.append([nombre,apellidos,email,telefono])
+#--------------------READ
 def leer():
     for i,contacto  in enumerate(agenda):
         print(i ,contacto)
@@ -41,14 +42,16 @@ def guarda():
 #---------------------------UPDATE------------------------
 def actulizar():
     idx = input("Write what numero to change")
-    if not is_numeric(idx):
-        print("Number is not numeric")
-        return 
-    if 0 <= idx < len(agenda):
-        nombre = input("INtroduce nombre")
-        apellidos = input("introduce apeelidos")
-        email = input("introduce eail")
-        telefono = input("introduce telefovo")
+    try:
+        idx = int(idx)
+    except:
+        print("ES no numero") 
+
+    if 0 <= idx < 5:
+        nombre = input("INtroduce nombre").strip()
+        apellidos = input("introduce apeelidos").strip()
+        email = input("introduce eail").strip()
+        telefono = input("introduce telefovo").strip()
         if not check_telefono(telefono):
             print("Telefono no es correcto")
             return
@@ -102,12 +105,7 @@ def check_email(email):
     else:
         return False
 
-############## Check for number is numerico
-def check_num(idx,opcion):
-    if idx == int(idx) or opcion == int(opcion):
-        return True
-    else:
-        return False
+
 #################### Check for sure
 def check_sure ():
     opcion_segura=input("Write yes or si,if you shure")
