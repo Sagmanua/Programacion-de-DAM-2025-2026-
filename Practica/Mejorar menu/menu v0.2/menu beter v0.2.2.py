@@ -1,5 +1,7 @@
 import pickle
 import os 
+import re
+
 agenda = []
 
 def menu():
@@ -83,7 +85,31 @@ def check_fiel():
     else:
         print("File does not exist or is not a file")
 
+############## Check for vailido of telefono
+def check_telefono(telefono):
+    pattern_telefono = r"^\+?\d{1,3}[- ]?\d{2,4}([- ]?\d{2,4}){1,3}$"
+    if re.fullmatch(pattern_telefono, telefono):
+        return True
+    else:
+        return False
+        
+############# Check for valido of email
+def check_email(email):
+    email_pattern = r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+    if re.fullmatch(email_pattern, email):
+        return True
+    else:
+        return False
 
+############## Check for number is numerico
+def chech_num(idx,opcion):
+    if idx == int(idx) or opcion == int(opcion):
+        return True
+    else:
+        return False
+
+
+############## Bucle infinito
 check_fiel()
 while True:
     os.system("cls")
