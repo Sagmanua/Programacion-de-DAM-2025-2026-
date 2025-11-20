@@ -29,7 +29,7 @@ def insertar():
 def leer():
     for i,contacto  in enumerate(agenda):
         print(i ,contacto)
-############ SAVE
+#---------------------------SAVE-----------------------------
 def guarda():
     try:
         with open("agenda.bin","wb")as archivo:
@@ -38,29 +38,29 @@ def guarda():
             print("Es guardado en bases de datos👌")
     except:
         print("File cant save")
-############# UPDATE
+#---------------------------UPDATE------------------------
 def actulizar():
     idx = input("Write what numero to change")
-    try:
-        idx = int(idx)
-        if 0 <= idx < len(agenda):
-            nombre = input("INtroduce nombre")
-            apellidos = input("introduce apeelidos")
-            email = input("introduce eail")
-            telefono = input("introduce telefovo")
-            if not check_telefono(telefono):
-                print("Telefono no es correcto")
-                return
-            if not check_email(email):
-                print("Email no tiene @")
-                return
-            agenda[idx] = [nombre, apellidos, email, telefono]
-            print("Registro ",idx," actualizado correctamente.")
-        else:
-            print("Number is not right")
-    except ValueError:
-        print("number is not numeric ")
-########### DELETE
+    if not is_numeric(idx):
+        print("Number is not numeric")
+        return 
+    if 0 <= idx < len(agenda):
+        nombre = input("INtroduce nombre")
+        apellidos = input("introduce apeelidos")
+        email = input("introduce eail")
+        telefono = input("introduce telefovo")
+        if not check_telefono(telefono):
+            print("Telefono no es correcto")
+            return
+        if not check_email(email):
+            print("Email no tiene @")
+            return
+        agenda[idx] = [nombre, apellidos, email, telefono]
+        print("Registro ",idx," actualizado correctamente.")
+    else:
+        print("Number is not right")
+
+#-------------------------- DELETE---------------------
 def borar():
     idx = input("Write what numero to delete")
     try:
@@ -121,7 +121,7 @@ def check_sure ():
 ############## Bucle infinito
 check_fiel()
 while True:
-    os.system("cls")
+    
     menu()
     opcion = input("Elige opcion")
     try:
