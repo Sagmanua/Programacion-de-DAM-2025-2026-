@@ -35,11 +35,37 @@ def guarda():
         print("Es guardado en bases de datos👌")
 ############# UPDATE
 def actulizar():
-    agenda.append
+    idx_actual = input("Write what numero to change")
+    try:
+        idx_actual = int(idx_actual)
+        if 0 <= idx_actual < len(agenda):
+            nombre_actual = input("INtroduce nombre")
+            apellidos_actual = input("introduce apeelidos")
+            email_actual = input("introduce eail")
+            telefono_actual = input("introduce telefovo")
+            if telefono_actual.isdigit():
+                if "@" in email_actual:
+                    agenda[idx_actual] = [nombre_actual, apellidos_actual, email_actual, telefono_actual]
+                else:
+                    print("eamil no tiene @")
+            else:
+                print("telefono es no corecta")
+        else:
+            print("Number is not right")
+    except ValueError:
+        print("number is not numeric ")
 ########### DELETE
 def borar():
-    print("")
-
+    idx_borar = input("Write what numero to delete")
+    try:
+        idx_borar = int(idx_borar)
+        if 0 <= idx_borar < len(agenda):
+            print("Your shure you want delete",idx_borar)
+            opcion_segura=input("Write yes or si")
+            if opcion_segura == "yes" or opcion_segura =="si":
+                agenda.pop[idx_borar]
+    except ValueError:
+        print("number is not numeric")
 def check_fiel():
     global agenda
     name_file = "agenda.bin"
