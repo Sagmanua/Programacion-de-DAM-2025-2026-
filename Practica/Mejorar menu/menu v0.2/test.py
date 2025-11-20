@@ -41,13 +41,36 @@ def check_telefono(telefono):
     pattern_telefono = r"^\+?\d{1,3}[- ]?\d{2,4}([- ]?\d{2,4}){1,3}$"
     if re.fullmatch(pattern_telefono, telefono):
         return True
-    else:
-        return False
+    return False
 
 if check_telefono(telefono):
     print("valido")
 else:
     print("No")
+
+def actulizar():
+    idx = input("Write what numero to change")
+
+    if not is_numeric(idx):
+        print("Number is not numeric")
+        return
+    if  0 == 0:
+        nombre = input("INtroduce nombre")
+        apellidos = input("introduce apeelidos")
+        email = input("introduce eail")
+        telefono = input("introduce telefovo")
+        if not check_telefono(telefono):
+            print("Telefono no es correcto")
+            return
+        if not check_email(email):
+            print("Email no tiene @")
+            return
+
+
+        print("Registro ",idx," actualizado correctamente.")
+
+
+
 
 email = 'user@example.com'
 
@@ -62,3 +85,11 @@ if check_email(email):
     print("valido email")
 else:
     print("No email")
+
+def check_num(idx,opcion):
+    if idx == int(idx) or opcion == int(opcion):
+        return True
+    else:
+        return False
+
+actulizar()
