@@ -102,8 +102,16 @@ def check_email(email):
         return False
 
 ############## Check for number is numerico
-def chech_num(idx,opcion):
+def check_num(idx,opcion):
     if idx == int(idx) or opcion == int(opcion):
+        return True
+    else:
+        return False
+#################### Check for sure
+def check_sure ():
+    opcion_segura=input("Write yes or si,if you shure")
+    opcion_segura = opcion_segura.lower()
+    if opcion_segura == "yes" or opcion_segura =="si":
         return True
     else:
         return False
