@@ -30,7 +30,7 @@ hola()
 +48 22 123 45 67
 
 
-user@example.com
+Jose@example.com
 john.doe@mail.co
 alice_bob123@domain.net
 test.email+spam@gmail.com
@@ -53,12 +53,12 @@ def actulizar():
 
     if not is_numeric(idx):
         print("Number is not numeric")
-        return
+        return 
     if  0 == 0:
-        nombre = input("INtroduce nombre")
-        apellidos = input("introduce apeelidos")
-        email = input("introduce eail")
-        telefono = input("introduce telefovo")
+        nombre = input("INtroduce nombre").strip()
+        apellidos = input("introduce apeelidos").strip()
+        email = input("introduce eail").strip()
+        telefono = input("introduce telefovo").strip()
         if not check_telefono(telefono):
             print("Telefono no es correcto")
             return
@@ -93,3 +93,23 @@ def check_num(idx,opcion):
         return False
 
 actulizar()
+
+
+def insertar():
+    nombre = input("Dime tu nombre").strip()
+    apellidos = input("Dime tu apellidos").strip()
+    email = input("Dime tu email").strip()
+    telefono = input("Dime tu nunero").strip()
+    if not check_telefono(telefono):
+            print("Telefono no es correcto")
+            return
+    if not check_email(email):
+            print("Email no tiene @")
+            return
+
+    agenda.append([nombre,apellidos,email,telefono])
+        
+############ READ
+def leer():
+    for i,contacto  in enumerate(agenda):
+        print(i ,contacto)
