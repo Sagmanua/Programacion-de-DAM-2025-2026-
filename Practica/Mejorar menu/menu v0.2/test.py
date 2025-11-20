@@ -113,3 +113,16 @@ def insertar():
 def leer():
     for i,contacto  in enumerate(agenda):
         print(i ,contacto)
+    
+
+def borar():
+    idx = input("Write what numero to change")
+    try:
+        idx = int(idx)
+    except:
+        print("ES no numero") 
+    if 0 <= idx < len(agenda):
+        check_sure(idx)
+    else:
+            print("Number is not right")
+##### Check if a have file 
