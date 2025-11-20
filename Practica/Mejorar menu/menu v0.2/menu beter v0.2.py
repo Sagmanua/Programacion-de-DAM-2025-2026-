@@ -86,6 +86,7 @@ def check_fiel():
 
 check_fiel()
 while True:
+    os.system("cls")
     menu()
     opcion = input("Elige opcion")
     try:
