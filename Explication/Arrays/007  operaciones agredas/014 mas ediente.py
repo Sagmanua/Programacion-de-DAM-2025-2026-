@@ -83,7 +83,7 @@ def sudoku_a_bloques(sudoku):
 def inicio():
     sudoku = generar_sudoku_completo()
     datos = sudoku_a_bloques(sudoku)
-    return render_template("index.html", datos=datos)
+    return render_template("index2.html", datos=datos)
 
 
 if __name__ == "__main__":
