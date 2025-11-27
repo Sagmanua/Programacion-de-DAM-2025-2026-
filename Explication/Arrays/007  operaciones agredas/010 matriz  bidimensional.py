@@ -13,4 +13,4 @@ for celda in range(1,10):
             sudoku.append(lista)
             break
 
-
+print(sudoku)
