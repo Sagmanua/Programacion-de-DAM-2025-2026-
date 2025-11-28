@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      .npc{
+        background:red;
+        border-radius:50px;position:absolute;
+      }
+    </style>
+  </head>
+ 	<body>	
+    <main>
+    </main>
+    <script>
+      // Cojo el contenedor
+      let escenario = document.querySelector("main")
+      let temporizador = setTimeout("bucle()",1000)
+      function bucle(){
+        
+        fetch("http://127.0.0.1:5000/api")
+        .then(function(respuesta){return respuesta.json();})
+        .then(function(datos){
+            console.log(datos)
+        	    escenario.innerHTML = ""
+            datos.forEach(function(npc){
+                let personaje = document.createElement("div")
+                personaje.classList.add("npc")
+                personaje.style.left = npc.posx+"px"
+                personaje.style.top = npc.posy+"px"
+                personaje.style.width = npc.radio+"px"
+                personaje.style.height = npc.radio+"px"
+                personaje.style.backgroundColor =
+                    "#" + Math.floor(Math.random() * 16777215).toString(16);
+                escenario.appendChild(personaje)
+          })
+        })
+        clearTimeout(temporizador)
+        temporizador = setTimeout("bucle()",60
+        )
+      }
+    </script>
+  </body>
+</html>
