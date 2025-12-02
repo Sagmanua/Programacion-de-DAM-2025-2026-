@@ -3,7 +3,7 @@
 <html>
 	<head>
         <style>
-        .div{border:1px solid black;padding:10px;width:50px;
+        .dia{border:1px solid black;padding:10px;width:50px;
         height:50px;display:inline-block;}
 
         </style>
