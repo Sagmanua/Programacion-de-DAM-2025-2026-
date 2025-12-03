@@ -44,3 +44,4 @@ todo el mundo leer, escribir y ejecutar
 usuario leer y escribir
 grupo solo leer
 todo el mundo solo leer
+..
