@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>    
+    <style>
+        #nave { position:absolute; }
+    </style>
+</head>
+
+<body>
+    <img src="nave.png" id="nave">
+</body>
+
+<script>
+class Jugador {
+    constructor() {
+        this.posx = 40;
+        this.posy = 40;
+    }
+}
+
+class Roca {
+    constructor(x, y) {
+        this.posx = x;
+        this.posy = y;
+    }
+}
+
+let rocas = [];
+let numeros_rocas = 10;
+
+for (let i = 0; i < numeros_rocas; i++) {
+    let posx_aleatoria = Math.random() * 500;
+    let posy_aleatoria = Math.random() * 500;
+    rocas.push(new Roca(posx_aleatoria, posy_aleatoria));
+}
+
+let InstanciaJugador = new Jugador();
+let nave = document.querySelector("#nave");
+
+document.onkeydown = function(tecla) {
+    switch(tecla.keyCode){
+        case 87: InstanciaJugador.posy -= 5; break;
+        case 83: InstanciaJugador.posy += 5; break;
+        case 65: InstanciaJugador.posx -= 5; break;
+        case 68: InstanciaJugador.posx += 5; break;
+    }
+
+    nave.style.left = InstanciaJugador.posx + "px";
+    nave.style.top = InstanciaJugador.posy + "px";
+}
+
+// Dibujar rocas
+for (let i = 0; i < numeros_rocas; i++) {
+    let nueva_roca = document.createElement("img");
+    nueva_roca.src = "roca.png";
+    nueva_roca.style.position = "absolute";
+    nueva_roca.style.left = rocas[i].posx + "px";
+    nueva_roca.style.top = rocas[i].posy + "px";
+    document.body.appendChild(nueva_roca);
+}
+</script>
+</html>

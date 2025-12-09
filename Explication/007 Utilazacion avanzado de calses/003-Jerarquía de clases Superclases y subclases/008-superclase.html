@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>    
+    <style>
+        #nave { position:absolute; width: 100px; height: 100px; }
+        .roca { width:50px; position:absolute; }
+    </style>
+</head>
+
+<body>
+    <img src="nave.png" id="nave">
+</body>
+
+<script>
+class Entidad{
+    constructor(x,y,a,v){
+    this.posx = x;
+    this.posy = y;
+    this.angulo = a;  	
+    this.velocidad = v;
+    }
+}
+class Bala extends Entidad{
+    constructor(x,y,a,v){
+        super (x,y,a,v);
+}
+}
+class Jugador extends Entidad {
+    constructor(x, y, a,v) {
+        super (x,y,a,v);
+
+    }
+}
+
+class Roca extends Entidad {
+    constructor(x, y, a, e,v) {
+        super (x,y,a,v);
+        this.escala = e;
+
+    }
+}
+
+// Crear rocas
+let rocas = [];
+let numeros_rocas = 10;
+
+for (let i = 0; i < numeros_rocas; i++) {
+    let posx_aleatoria = Math.random() * 500;
+    let posy_aleatoria = Math.random() * 500;
+    let angulo_aleatorio = Math.random() * 360; // grados para CSS
+    let escala_aleatoria = Math.random();
+    rocas.push(new Roca(
+        posx_aleatoria, 
+        posy_aleatoria, 
+        angulo_aleatorio, 
+        escala_aleatoria,
+        0
+    ));
+}
+
+// Crear jugador
+let InstanciaJugador = new Jugador(40, 40, 0);
+let nave = document.querySelector("#nave");
+
+// Movimiento de la nave
+document.onkeydown = function(tecla) {
+    switch(tecla.keyCode){
+        case 87: InstanciaJugador.posy -= 5; break; // W
+        case 83: InstanciaJugador.posy += 5; break; // S
+        case 65: InstanciaJugador.posx -= 5; break; // A
+        case 68: InstanciaJugador.posx += 5; break; // D
+    }
+
+    nave.style.left = InstanciaJugador.posx + "px";
+    nave.style.top = InstanciaJugador.posy + "px";
+}
+
+// Dibujar rocas
+for (let i = 0; i < numeros_rocas; i++) {
+    let nueva_roca = document.createElement("img");
+    nueva_roca.src = "roca.png";
+    nueva_roca.classList.add("roca");
+    nueva_roca.style.left = rocas[i].posx + "px";
+    nueva_roca.style.top = rocas[i].posy + "px";
+    nueva_roca.style.transform = "rotate("+rocas[i].angulo+"deg) scale("+rocas[i].escala+")";
+    document.body.appendChild(nueva_roca);
+}
+</script>
+</html>

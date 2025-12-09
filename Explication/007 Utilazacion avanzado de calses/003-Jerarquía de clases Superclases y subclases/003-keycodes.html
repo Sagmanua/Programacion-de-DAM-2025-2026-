@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>    
+        <style>
+            #nave{position:absolute;}
+        </style>
+    </head>
+<body>
+    <img src="nave.png" id="nave">
+</body>
+<script src="script.js"></script>
+<script>
+    let nave = document.querySelector("#nave");
+    let posx = 40;
+    let posy = 40;
+
+    document.onkeydown = function(tecla){
+        console.log(tecla)
+        // w = 87, s = 83, a = 65 , d= 68
+        switch(tecla.keyCode){
+            case 87:
+                posy -= 5;
+                break;
+            case 83:
+                posy +=5;
+                break;
+            case 65:
+                posx -= 5;
+                break;
+            case 68:
+                posx +=5;
+                break;
+        }
+        nave.style.left = posx+"px";
+        nave.style.top = posy+"px";
+    }
+
+
+</script>
+</html>

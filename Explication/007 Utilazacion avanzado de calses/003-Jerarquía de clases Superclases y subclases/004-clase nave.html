@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>    
+        <style>
+            #nave{position:absolute;}
+        </style>
+    </head>
+<body>
+    <img src="nave.png" id="nave">
+</body>
+<script src="script.js"></script>
+<script>
+    class Jagador{
+        constructor(){
+            this.posx = 40;
+            this.posy;
+        }
+    }
+
+    let  InstanciaJugador = new Jugador(40,40)
+    let nave = document.querySelector("#nave");
+
+    document.onkeydown = function(tecla){
+        console.log(tecla)
+        // w = 87, s = 83, a = 65 , d= 68
+        switch(tecla.keyCode){
+            case 87:
+                InstanciaJugador.posy -= 5;
+                break;
+            case 83:
+                InstanciaJugador.posy +=5;
+                break;
+            case 65:
+                InstanciaJugador.posx -= 5;
+                break;
+            case 68:
+                InstanciaJugador.posx +=5;
+                break;
+        }
+        nave.style.left = posx+"px";
+        nave.style.top = posy+"px";
+    }
+
+
+</script>
+</html>
