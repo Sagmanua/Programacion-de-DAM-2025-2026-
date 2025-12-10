@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      #rojo{
+        width:50px;height:50px;background:red;border:1px solid black;
+      	transform:translate(100px,100px) rotate(45deg) scale(2)
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+        document.onkeyndown = function(tecla){
+            switch(tecla.key){
+                case "w":
+                    console.log("Movemos el personaje hacia arriba")
+                break
+                case "a":
+                    console.log("Movemos el personaje hacia la izquierda")
+                break
+                case "s":
+                    console.log("Movemos el personaje hacia abajo")
+                break
+                case "d":
+                    console.log("Movemos el personaje hacia la derecha")
+                break
+            }
+        }
+    </script>
+  </body>
+</html>

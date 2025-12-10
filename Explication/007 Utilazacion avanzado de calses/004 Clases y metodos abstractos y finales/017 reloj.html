@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>	
+    
+  </head>
+  <body>
+    <canvas></canvas>
+    <script>
+        let temporizador = setTimeout("bucle()",1000)
+        let lienzo = document.querySelector("canvas")
+        lienzo.width = 512;
+        lienzo.height = 512;
+        let contexto = lienzo.getContext("2d")
+
+        // cojer los datos de Datetime 
+        function bucle(){
+        let fecha = new Date();
+
+
+        let hora = fecha.getHours();
+        let minuto = fecha.getMinutes();
+        let segundo = fecha.getSeconds();
+
+        
+
+        // Dibujar
+        contexto.clearRect(0,0,512,512)
+
+
+        contexto.beginPath();
+            // arco: xinicial, yinicial,radio,anguloinicial,angulofinal
+        contexto.arc(256, 256, 200, 0, Math.PI * 2);
+        contexto.stroke();
+
+        // Angulo a segundo
+        angulo_segundo = segundo*(Math.PI*2/60)
+        contexto.beginPath();
+        contexto.moveTo(256,256);
+        contexto.lineTo(
+            256+Math.cos(angulo_segundo)*200,
+            256+Math.sin(angulo_segundo)*200
+
+        );
+        contexto.stroke();   
+        
+        // Angulo a minutes
+        angulo_minuto = minuto*(Math.PI*2/60)
+        contexto.beginPath();
+        contexto.moveTo(256,256);
+        contexto.lineTo(
+            256+Math.cos(angulo_minuto)*150,
+            256+Math.sin(angulo_minuto)*150
+
+        );
+        contexto.stroke(); 
+        
+        // Angulo a hora
+        angulo_hora = hora*(Math.PI*2/12)
+        contexto.beginPath();
+        contexto.moveTo(256,256);
+        contexto.lineTo(
+            256+Math.cos(angulo_hora)*100,
+            256+Math.sin(angulo_hora)*100
+
+        );
+        contexto.stroke(); 
+
+
+
+        clearTimeout(temporizador);
+        temporizador = setTimeout("bucle()",1000)
+      }
+    </script>
+  </body>
+</html>
