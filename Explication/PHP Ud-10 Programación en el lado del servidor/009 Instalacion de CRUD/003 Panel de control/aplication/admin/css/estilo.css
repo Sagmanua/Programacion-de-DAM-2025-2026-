@@ -61,6 +61,14 @@ table th{
 table td,table th{
 	padding:5px;
 }
+.eliminar,.editar{
+	width:30px;
+  height:30px;
+  background:red;
+  border-radius:30px;
+  color:white;
+  line-height:30px;
+}
 
 /* ESTILOS DEL FORMULARIO /////////////  */
 
