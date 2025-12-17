@@ -1,10 +1,10 @@
 from PIL import Image
 
-imagen = Image.open("imagen.png")
+imgen = Image.open("image.png")
 
-anchura,altura = imagen.size		# Cojo altura y anchura
+anchura,altura = imgen.size
 
-for x in range(0,anchura):			# Repaso la anchura
-	for y in range(0,altura):			# Repaso la altura
-		pixel = imagen.getpixel((x, y))	# Cojo cada pixel
-		print(pixel)										# Y lo saco por pantalla
+for x in range(0,anchura):
+    for y in range(0,altura):
+        first_pixel = imgen.getpixel((x,y))
+        print(first_pixel)
