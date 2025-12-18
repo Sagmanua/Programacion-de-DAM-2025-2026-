@@ -4,7 +4,7 @@ import mysql.connector                             # Importamos MySQL
 import time                                       # Para dormir
 from urllib.parse import urljoin, urlparse
 
-URLS = ["https://elpais.com"]
+URLS = ["https://github.com/jocarsa/programaciondam2526/tree/main/010-Programaci%C3%B3n%20en%20el%20lado%20del%20servidor/011-Supercontrolador/004-capricho%20usabilidad/back"]
 
 DB_HOST = "localhost"
 DB_USER = "satori"
