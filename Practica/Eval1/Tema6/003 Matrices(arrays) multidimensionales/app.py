@@ -44,9 +44,7 @@ def guarda():
 def check_fiel():
     global agenda
     name_file = "agenda.bin"
-    # Check if the file exists and is a file
     if os.path.isfile(name_file):
-            # Если файл существует, загружаем данные
         with open(name_file, "rb") as archivo:
             agenda = pickle.load(archivo)
         print("Datos cargados desde el archivo✅")
