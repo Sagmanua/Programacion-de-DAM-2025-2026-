@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      .npc {
+        background: red;
+        border-radius: 50%; /* Redondo perfecto */
+        position: absolute;
+        transition: all 0.1s linear; /* Movimiento suave en 2026 */
+      }
+      main {
+        width: 500px;
+        height: 500px;
+        border: 1px solid black;
+        position: relative;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>	
+    <main id="escenario"></main>
+    <script>
+      let escenario = document.querySelector("#escenario")
+      
+      function bucle() {
+        fetch("/api") 
+        .then(respuesta => respuesta.json())
+        .then(datos => {
+            escenario.innerHTML = "";
+            datos.forEach(npc => {
+                let personaje = document.createElement("div");
+                personaje.classList.add("npc");
+                personaje.style.left = npc.posx + "px";
+                personaje.style.top = npc.posy + "px";
+                personaje.style.width = npc.radio + "px";
+                personaje.style.height = npc.radio + "px";
+                
+                personaje.style.backgroundColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+                
+                escenario.appendChild(personaje);
+            });
+        });
+      }
+
+      setInterval(bucle, 100);
+    </script>
+  </body>
+</html>
