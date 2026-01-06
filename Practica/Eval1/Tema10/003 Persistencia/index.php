@@ -6,3 +6,6 @@ $cliente['apellidos'] = "Carratalá";
 $cliente['email'] = "jose@ejemplo.com";
 
 echo "El cliente es: " . $cliente['nombre'] . " " . $cliente['apellidos'];
+
+$json =  json_encode($cliente);
+echo $json;
