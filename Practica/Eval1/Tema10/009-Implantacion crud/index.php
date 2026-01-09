@@ -1,0 +1,1 @@
+include inc/listar_articlos.php

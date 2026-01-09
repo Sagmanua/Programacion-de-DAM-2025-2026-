@@ -1,6 +1,5 @@
 import pickle
 import os 
-import re
 
 agenda = []
 
@@ -16,12 +15,7 @@ def insertar():
     apellidos = input("Dime tu apellidos").strip()
     email = input("Dime tu email").strip()
     telefono = input("Dime tu nunero").strip()
-    if not check_telefono(telefono):
-            print("Telefono no es correcto")
-            return
-    if not check_email(email):
-            print("Email no tiene @")
-            return
+
 
     agenda.append([nombre,apellidos,email,telefono])
 #--------------------READ
@@ -51,32 +45,9 @@ def check_fiel():
     else:
         print("File does not exist or is not a file")
 
-############## Check for vailido of telefono
-def check_telefono(telefono):
-    pattern_telefono = r"^\+?\d{1,3}[- ]?\d{2,4}([- ]?\d{2,4}){1,3}$"
-    if re.fullmatch(pattern_telefono, telefono):
-        return True
-    else:
-        return False
-        
-############# Check for valido of email
-def check_email(email):
-    email_pattern = r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-    if re.fullmatch(email_pattern, email):
-        return True
-    else:
-        return False
 
 
-#################### Check for sure
-def check_sure (idx):
-    print("Your sure you want delete",idx)
-    opcion_segura=input("Write yes or si,if you shure")
-    opcion_segura = opcion_segura.lower()
-    if opcion_segura == "yes" or opcion_segura =="si":
-        return True
-    else:
-        return False
+
 
 
 ############## Bucle infinito
