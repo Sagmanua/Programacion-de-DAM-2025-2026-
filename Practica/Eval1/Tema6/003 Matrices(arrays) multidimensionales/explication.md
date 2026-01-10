@@ -1,6 +1,6 @@
 # Indroduccion brece y contexalizacion
 
-
+En un mundo lleno de diversión y entretenimiento, los videojuegos son una parte importante de muchas personas. Para este ejercicio, vamos a imaginar que estás jugando a uno de tus juegos favoritos mientras te sumerges en el universo del anime y las películas que tanto disfrutas. Imagina que cada vez que completes un nivel o termine una serie, quieres guardar tu progreso o anotar algo interesante sobre lo que acabaste de ver.
 
 
 
@@ -164,3 +164,4 @@ while True:
 ```
 
 # Cierre/Conclusión enlazando con la unidad
+Este ejercicio no solo te ayuda a practicar listas, diccionarios y archivos binarios en Python, sino que también demuestra cómo estas herramientas pueden servir para organizar información real, igual que llevar un registro de tus avances en tus videojuegos o animes favoritos.
