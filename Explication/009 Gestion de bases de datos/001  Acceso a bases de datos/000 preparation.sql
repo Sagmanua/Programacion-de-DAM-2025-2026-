@@ -7,6 +7,11 @@ CREATE TABLE clientes(
   apellidos VARCHAR(255),
   email VARCHAR(255)
 );
-
+INSERT INTO clientes VALUES(
+	"Bohdan",
+  "Sydorenko",
+  "nose@mial.com"
+);
 
 SELECT * FROM clientes;
+
