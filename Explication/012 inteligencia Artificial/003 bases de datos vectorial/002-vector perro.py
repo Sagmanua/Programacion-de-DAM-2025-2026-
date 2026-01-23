@@ -1,3 +1,7 @@
+# ubuntu install chromadb and python support
+# now minimal example throwing the vector meaning of word perro
+
+
 from sentence_transformers import SentenceTransformer
 import numpy as np
 
