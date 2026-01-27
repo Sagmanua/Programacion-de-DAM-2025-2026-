@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi idioma JS</title>
+    <style>
+        header {
+            display: flex;
+            background: black;
+            color: white;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        header a {
+            text-decoration: none;
+            color: inherit;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" data-key="inicio"></a>
+            <a href="#" data-key="sobremi"></a>
+            <a href="#" data-key="proyectos"></a>
+            <a href="#" data-key="contacto"></a>
+        </nav>
+        <select id="lang-selector">
+            <option value="es">🇪🇸</option>
+            <option value="en">🇬🇧</option>
+        </select>
+        <h1>Bohdan Sydorenko</h1>
+    </header>
+
+    <script>
+        // Translations object
+        const idioma = {
+            es: {
+                inicio: "Inicio",
+                sobremi: "Sobre mi",
+                proyectos: "Proyectos",
+                contacto: "Contacto"
+            },
+            en: {
+                inicio: "Home",
+                sobremi: "About me",
+                proyectos: "Projects",
+                contacto: "Contact"
+            }
+        };
+
+        // Get stored language from localStorage or default to 'es'
+        let currentLang = localStorage.getItem('idioma') || 'es';
+
+        // Update the UI
+        function updateLanguage(lang) {
+            document.querySelectorAll('nav a').forEach(link => {
+                const key = link.getAttribute('data-key');
+                link.textContent = idioma[lang][key];
+            });
+            document.getElementById('lang-selector').value = lang;
+            localStorage.setItem('idioma', lang); // store preference
+        }
+
+        // Listen for changes
+        document.getElementById('lang-selector').addEventListener('change', (e) => {
+            updateLanguage(e.target.value);
+        });
+
+        // Initial load
+        updateLanguage(currentLang);
+    </script>
+</body>
+</html>
