@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    	<meta charset="utf-8">
+  </head>
+  <body>
+    <div class="jocarsacarrusel">
+      <img src="5tC_A_wgQYw.jpg" alt="Texto alternativo">
+      <img src="7FBOjrjU7hw.jpg" alt="Texto alternativo">
+      <img src="9oxNiLHOsXM.jpg" alt="Texto alternativo">
+      <img src="56jDEvDWsdA.jpg" alt="Texto alternativo">
+      <img src="a9vOpco5Jg0.jpg" alt="Texto alternativo">
+      <img src="aeA7YvJCKwk.jpg" alt="Texto alternativo">
+      <img src="C3In5jD7lJA.jpg" alt="Texto alternativo">
+      <img src="cVfmrb97Wt0.jpg" alt="Texto alternativo">
+    </div>
+    <style>
+      .jocarsacarrusel{width:1280px;height:820px;overflow:hidden;}
+      .jocarsacarrusel section{width:8960px;display:flex;left:0px;transition:all 1s;position:relative;}
+      .jocarsacarrusel section img{width:1280px;height:720px;}
+    </style>
+    <script>
+      let contenedor = document.querySelector(".jocarsacarrusel");
+      let contenido = document.querySelectorAll(".jocarsacarrusel img")
+      contenido.forEach(function(elemento){
+      	elemento.remove()
+      })
+      let nuevo_contenedor = document.createElement("section")
+      nuevo_contenedor.style.left = 0
+      contenedor.appendChild(nuevo_contenedor)
+      
+      contenido.forEach(function(elemento){
+      	nuevo_contenedor.appendChild(elemento)
+      })
+      let botonatras = document.createElement("button")
+      botonatras.textContent = "◀"
+      contenedor.appendChild(botonatras)
+      let botondelante = document.createElement("button")
+      botondelante.textContent = "▶"
+      contenedor.appendChild(botondelante)
+      var anchura = 1280;
+      var contador = 0;
+      botondelante.onclick = function(){
+        contador--;
+      	nuevo_contenedor.style.left = contador*anchura+"px"
+      }
+      botonatras.onclick = function(){
+        contador++;
+      	nuevo_contenedor.style.left = contador*anchura+"px"
+      }
+    </script>
+  </body>
+</html>
+
+
+
+
+
+

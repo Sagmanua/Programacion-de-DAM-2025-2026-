@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        .jocarsacarrusel{width:1280px;height:720px;}
+        .jocarsacarrusel section{width:8960px;display:flex;left:0px;transition:all 1s;position:relative;}
+        .jocarsacarrusel section img{width:1280px;height:720px;}
+    </style>
+
+</head>
+<body>
+    <div class="jocarsacarrusel">
+        <img src="5tC_A_wgQYw.jpg" alt="Texto alternativo">
+        <img src="7FBOjrjU7hw.jpg" alt="Texto alternativo">
+        <img src="9oxNiLHOsXM.jpg" alt="Texto alternativo">
+        <img src="56jDEvDWsdA.jpg" alt="Texto alternativo">
+        <img src="a9vOpco5Jg0.jpg" alt="Texto alternativo">
+        <img src="aeA7YvJCKwk.jpg" alt="Texto alternativo">
+        <img src="C3In5jD7lJA.jpg" alt="Texto alternativo">
+        <img src="cVfmrb97Wt0.jpg" alt="Texto alternativo">
+    </div>
+    <script>
+        let contenedor = document.querySelector(".jocarsacarrusel");
+        let contenido = document.querySelectorAll(".jocarsacarrusel img");
+        
+
+        // Crear nuevo contenedor <section>
+        let nuevo_contenedor = document.createElement("section");
+        contenedor.appendChild(nuevo_contenedor);
+
+        // Mover todas las imágenes al nuevo contenedor
+        contenido.forEach(function(elemento){
+            nuevo_contenedor.appendChild(elemento);
+        });
+
+        // Crear botones
+        let boton_atras = document.createElement("button");
+        boton_atras.textContent = "◀";
+        contenedor.appendChild(boton_atras);
+
+        let boton_delante = document.createElement("button");
+        boton_delante.textContent = "▶";
+        contenedor.appendChild(boton_delante);
+        var anchura = 1200;
+        var contador = 0;
+        boton_delante.onclick = function(){
+            contador--;
+            nuevo_contenedor.style.left = contador*anchura+"px"
+        }
+        boton_atras.onclick = function(){
+            contador++;
+            nuevo_contenedor.style.left = contador*anchura+"px"
+        }
+</script>
+
+</body>
+</html>
