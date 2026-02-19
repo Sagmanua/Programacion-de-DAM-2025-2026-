@@ -10,3 +10,11 @@ OpenAI - GPT
 Google - Gemini
 Microsoft - Copilot
 Anthropic - Claude
+
+Muchos de ellos ofrecen una API
+Application Programmer Interface
+
+Ventajas:
+Potencia
+Desventajas:
+Dependencia, coste

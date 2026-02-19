@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:#f6f7fb;color:#111}
+      .kanban{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:16px;max-width:1200px;margin:0 auto}
+      .col{background:#fff;border:1px solid #e7e7ee;border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+      .col h3{margin:0;padding:12px 12px;border-bottom:1px solid #eee;font-size:14px;letter-spacing:.2px}
+      .top{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:10px 12px;border-bottom:1px solid #eee}
+      .top button{border:1px solid #e3e3ee;background:#111;color:#fff;border-radius:10px;padding:8px 10px;font-size:12px;cursor:pointer}
+      .top button:active{transform:translateY(1px)}
+      .zona{padding:12px;min-height:340px}
+      .card{background:#fff;border:1px solid #e9e9f2;border-radius:12px;padding:10px;margin:0 0 10px;cursor:grab;box-shadow:0 3px 10px rgba(0,0,0,.05)}
+      .card:active{cursor:grabbing}
+      .dragover{outline:2px dashed #b9b9c9;outline-offset:-6px;background:#fafaff}
+      .row{display:flex;gap:8px;align-items:center;justify-content:space-between}
+      .txt{flex:1;min-height:20px;outline:none}
+      .tools{display:flex;gap:8px;align-items:center}
+      .tools input[type="color"]{width:28px;height:28px;border:0;background:transparent;padding:0;cursor:pointer}
+      .del{border:1px solid #e6e6ee;background:#fff;border-radius:10px;padding:6px 9px;font-size:12px;cursor:pointer}
+      .del:hover{background:#f3f3f8}
+    </style>
+  </head>
+  <body>
+    <div class="kanban">
+      <div class="col" data-col="todo">
+        <h3>Por hacer</h3>
+        <div class="top">
+          <span></span>
+          <button class="add">+ Añadir</button>
+        </div>
+        <div class="zona" id="suelta-1"></div>
+      </div>
+
+      <div class="col" data-col="doing">
+        <h3>En curso</h3>
+        <div class="top">
+          <span></span>
+          <button class="add">+ Añadir</button>
+        </div>
+        <div class="zona" id="suelta-2"></div>
+      </div>
+
+      <div class="col" data-col="review">
+        <h3>En revisión</h3>
+        <div class="top">
+          <span></span>
+          <button class="add">+ Añadir</button>
+        </div>
+        <div class="zona" id="suelta-3"></div>
+      </div>
+
+      <div class="col" data-col="done">
+        <h3>Hecho</h3>
+        <div class="top">
+          <span></span>
+          <button class="add">+ Añadir</button>
+        </div>
+        <div class="zona" id="suelta-4"></div>
+      </div>
+    </div>
+
+    <!-- Plantilla original -->
+    <div id="arrastra" draggable="true" class="card" style="display:none"></div>
+
+    <script>
+    	let arrastra = document.querySelector("#arrastra")
+      let sueltas = document.querySelectorAll(".zona")
+      let elementoArrastrado = null
+
+      // ----------------------------
+      // Persistencia
+      // ----------------------------
+      const KEY = "kanban_simple_v1"
+
+      function guardar(){
+        let data = {}
+        document.querySelectorAll(".col").forEach(function(col){
+          let colKey = col.getAttribute("data-col")
+          let zona = col.querySelector(".zona")
+          data[colKey] = []
+          zona.querySelectorAll(".card").forEach(function(card){
+            data[colKey].push({
+              id: card.getAttribute("data-id"),
+              text: card.querySelector(".txt").innerText,
+              color: card.getAttribute("data-color") || "#ffffff"
+            })
+          })
+        })
+        localStorage.setItem(KEY, JSON.stringify(data))
+      }
+
+      function cargar(){
+        let raw = localStorage.getItem(KEY)
+        if(!raw) return false
+        let data = null
+        try{ data = JSON.parse(raw) }catch(e){ return false }
+
+        // limpiar
+        document.querySelectorAll(".zona").forEach(function(z){ z.innerHTML = "" })
+
+        // pintar
+        const map = {
+          todo: document.querySelector('[data-col="todo"] .zona'),
+          doing: document.querySelector('[data-col="doing"] .zona'),
+          review: document.querySelector('[data-col="review"] .zona'),
+          done: document.querySelector('[data-col="done"] .zona')
+        }
+
+        Object.keys(map).forEach(function(k){
+          (data[k] || []).forEach(function(item){
+            map[k].appendChild(creaTarjeta(item.text, item.color, item.id))
+          })
+        })
+        return true
+      }
+
+      // ----------------------------
+      // Tarjetas
+      // ----------------------------
+      function uid(){
+        return Date.now().toString(36) + Math.random().toString(36).slice(2,7)
+      }
+
+      function aplicaColor(card, color){
+        card.setAttribute("data-color", color)
+        card.style.background = color
+      }
+
+      function creaTarjeta(texto, color, id){
+        let t = document.createElement("div")
+        t.className = "card"
+        t.draggable = true
+        t.setAttribute("data-id", id || uid())
+
+        let row = document.createElement("div")
+        row.className = "row"
+
+        let txt = document.createElement("div")
+        txt.className = "txt"
+        txt.contentEditable = "true"
+        txt.spellcheck = true
+        txt.innerText = texto || "Nueva tarjeta"
+
+        let tools = document.createElement("div")
+        tools.className = "tools"
+
+        let picker = document.createElement("input")
+        picker.type = "color"
+        picker.value = color || "#ffffff"
+
+        let del = document.createElement("button")
+        del.className = "del"
+        del.innerText = "Eliminar"
+
+        tools.appendChild(picker)
+        tools.appendChild(del)
+
+        row.appendChild(txt)
+        row.appendChild(tools)
+        t.appendChild(row)
+
+        aplicaColor(t, picker.value)
+
+        // Drag logs (como tu plantilla)
+        t.ondragstart = function(){
+          elementoArrastrado = t
+          console.log("has empezado a arrastrar")
+        }
+        t.ondragend = function(){
+          console.log("has acabado de arrastrar")
+          elementoArrastrado = null
+          guardar()
+        }
+
+        // Editado -> guardar
+        txt.oninput = function(){
+          guardar()
+        }
+
+        // Color -> guardar
+        picker.oninput = function(){
+          aplicaColor(t, picker.value)
+          guardar()
+        }
+
+        // Eliminar -> guardar
+        del.onclick = function(){
+          t.remove()
+          guardar()
+        }
+
+        return t
+      }
+
+      // ----------------------------
+      // Dropzones
+      // ----------------------------
+      sueltas.forEach(function(suelta){
+        suelta.ondragover = function(e){
+          e.preventDefault()
+          suelta.classList.add("dragover")
+        }
+        suelta.ondragleave = function(){
+          suelta.classList.remove("dragover")
+        }
+        suelta.ondrop = function(){
+          suelta.classList.remove("dragover")
+          console.log("Alguien me ha soltado algo")
+          if(elementoArrastrado) suelta.appendChild(elementoArrastrado)
+          guardar()
+        }
+      })
+
+      // ----------------------------
+      // Botones "Añadir" por columna
+      // ----------------------------
+      document.querySelectorAll(".col .add").forEach(function(btn){
+        btn.onclick = function(){
+          let col = btn.closest(".col")
+          let zona = col.querySelector(".zona")
+          let card = creaTarjeta("Nueva tarjeta", "#ffffff")
+          zona.appendChild(card)
+          // foco rápido para editar
+          card.querySelector(".txt").focus()
+          guardar()
+        }
+      })
+
+      // ----------------------------
+      // Estado inicial
+      // ----------------------------
+      if(!cargar()){
+        // Por defecto, 3 tarjetas como antes
+        document.querySelector("#suelta-1").appendChild(creaTarjeta("Preparar temario", "#ffffff"))
+        document.querySelector("#suelta-1").appendChild(creaTarjeta("Grabar vídeo 1", "#ffffff"))
+        document.querySelector("#suelta-1").appendChild(creaTarjeta("Diseñar ejercicios", "#ffffff"))
+        guardar()
+      }
+
+      // Mantengo tu draggable original con logs (no se usa, pero respeta la plantilla)
+      arrastra.ondragstart = function(){
+      	console.log("has empezado a arrastrar")
+      }
+      arrastra.ondragend = function(){
+      	console.log("has acabado de arrastrar")
+      }
+  	</script>
+  </body>
+</html>

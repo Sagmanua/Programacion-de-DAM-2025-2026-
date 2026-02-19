@@ -24,29 +24,38 @@
         	type="text" 
           name="criterio" 
           placeholder="Introduce algo para buscar..."
-          value="<?= $_POST['criterio'] ?>">
-      </form>
+      value="<?= $_POST['criterio'] ?? '' ?>">
+    </form>
     </header>
-    <main>
-    	<?php
-      	
-        $host = "localhost";
-        $user = "satori";
-        $pass = "Satori123$";
-        $db   = "satori";
+<main>
+  <?php
+    $host = "localhost";
+    $user = "satori";
+    $pass = "Satori123$";
+    $db   = "satori";
 
-        $conexion = new mysqli($host, $user, $pass, $db);
-        
+    $conexion = new mysqli($host, $user, $pass, $db);
+    
+    // 1. Get the search term safely
+    $criterio = $_POST['criterio'] ?? '';
+
+    // 2. Only run the query if 'criterio' isn't empty
+    if ($criterio !== '') {
         $resultado = $conexion->query("
-          SELECT * FROM paginas WHERE titulo LIKE '%".$_POST['criterio']."%';
-        ");	// Comparador LIKE '%xxxxxx%'
+          SELECT * FROM paginas WHERE titulo LIKE '%$criterio%';
+        ");
+
         while ($fila = $resultado->fetch_assoc()) { ?>
-      	<article>
+        <article>
           <h3><?= $fila['titulo'] ?></h3>
           <p><?= $fila['descripcion'] ?></p>
           <a href="<?= $fila['url'] ?>"><?= $fila['url'] ?></a>
         </article>
-      <?php } ?>
-    </main>
+      <?php } 
+    } else {
+        echo "<p style='text-align:center;'>Empieza buscando algo arriba.</p>";
+    }
+    ?>
+</main>
   </body>
 </html>
