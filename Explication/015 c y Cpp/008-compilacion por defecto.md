@@ -1,0 +1,1 @@
+gcc 007-operacodores.c
